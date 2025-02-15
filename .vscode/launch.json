@@ -1,0 +1,11 @@
+{
+    "version" : "0.2.0" ,
+
+    "configurations" : [{
+        "console" : "integratedTerminal" ,
+        "program" : "Scripts/Bundle.py" ,
+        "request" : "launch" ,
+        "type" : "debugpy" ,
+        "name" : "Bundle"
+    }]
+}
