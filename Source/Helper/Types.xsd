@@ -27,8 +27,13 @@
 
     <xs:simpleType name = 'Semantic-Version' >
 
-        <xs:restriction base = 'xs:token'>
-            <xs:pattern value = '\d+(\.\d+){0,2}(-\w+)?' />
+        <!--
+            Abbreviated version from:
+            https://semver.org/#is-there-a-suggested-regular-expression-regex-to-check-a-semver-string
+        -->
+
+        <xs:restriction base = 'xs:string'>
+            <xs:pattern value = '(0|[1-9]\d*)\.(0|[1-9]\d*)\.(0|[1-9]\d*)(-((0|[1-9]\d*|\d*[a-zA-Z-][0-9a-zA-Z-]*)(\.(0|[1-9]\d*|\d*[a-zA-Z-][0-9a-zA-Z-]*))*))?(\+([0-9a-zA-Z-]+(\.[0-9a-zA-Z-]+)*))?' />
         </xs:restriction>
 
     </xs:simpleType>
@@ -38,7 +43,7 @@
     <xs:simpleType name = 'Calender-Version' >
 
         <xs:restriction base = 'xs:token'>
-            <xs:pattern value = '\d{2,4}\.\d{2}\.\d{2}(-\w+)?' />
+            <xs:pattern value = '([1-9]{4})\.([0-9][1-9])\.([0-9][1-9])(-((0|[1-9]\d*|\d*[a-zA-Z-][0-9a-zA-Z-]*)(\.(0|[1-9]\d*|\d*[a-zA-Z-][0-9a-zA-Z-]*))*))?(\+([0-9a-zA-Z-]+(\.[0-9a-zA-Z-]+)*))?' />
         </xs:restriction>
 
     </xs:simpleType>

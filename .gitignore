@@ -3,3 +3,4 @@ node_modules/**
 Test/**
 .venv/**
 .build/**
+package.xml
