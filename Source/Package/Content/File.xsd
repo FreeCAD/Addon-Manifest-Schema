@@ -4,14 +4,14 @@
 ?>
 
 <xs:schema xmlns:xs = 'http://www.w3.org/2001/XMLSchema' >
-    <xs:element name = 'date' >
+    <xs:element name = 'file' >
 
         <xs:annotation>
             <xs:documentation>
 
-                [🛈](https://wiki.freecad.org/Package_Metadata#.3Cdescription.3E)
+                [🛈](https://wiki.freecad.org/Package_Metadata#.3Cfile.3E)
 
-                Date
+                File
 
             </xs:documentation>
         </xs:annotation>
@@ -19,7 +19,7 @@
         <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 
         <xs:simpleType>
-            <xs:restriction base = 'xs:date' />
+            <xs:restriction base = 'xs:anyURI' />
         </xs:simpleType>
 
     </xs:element>

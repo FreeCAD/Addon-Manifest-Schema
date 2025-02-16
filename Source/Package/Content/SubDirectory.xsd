@@ -4,19 +4,14 @@
 ?>
 
 <xs:schema xmlns:xs = 'http://www.w3.org/2001/XMLSchema' >
-
-    <xs:include schemaLocation = 'Types.xsd' />
-
-    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-
-    <xs:element name = 'version' >
+    <xs:element name = 'subdirectory' >
 
         <xs:annotation>
             <xs:documentation>
 
-                [🛈](https://wiki.freecad.org/Package_Metadata#.3Cversion.3E)
+                [🛈](https://wiki.freecad.org/Package_Metadata#.3Csubdirectory.3E)
 
-                Version
+                SubDirectory
 
             </xs:documentation>
         </xs:annotation>
@@ -24,9 +19,8 @@
         <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 
         <xs:simpleType>
-            <xs:union memberTypes = 'Semantic-Version Calender-Version' />
+            <xs:restriction base = 'xs:anyURI' />
         </xs:simpleType>
 
     </xs:element>
-
 </xs:schema>

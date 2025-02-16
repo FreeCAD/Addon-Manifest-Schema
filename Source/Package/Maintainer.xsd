@@ -5,7 +5,7 @@
 
 <xs:schema xmlns:xs = 'http://www.w3.org/2001/XMLSchema' >
 
-    <xs:include schemaLocation = 'Types.xsd' />
+    <xs:include schemaLocation = '../Helper/Types.xsd' />
 
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 
@@ -14,7 +14,7 @@
         <xs:annotation>
             <xs:documentation>
 
-                [🛈](https://wiki.freecad.org/Package_Metadata#.3Cdescription.3E)
+                [🛈](https://wiki.freecad.org/Package_Metadata#.3Cmaintainer.3E)
 
                 Maintainer
 

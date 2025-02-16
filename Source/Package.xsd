@@ -5,12 +5,13 @@
 
 <xs:schema xmlns:xs = 'http://www.w3.org/2001/XMLSchema' >
 
-    <xs:include schemaLocation = 'Description.xsd' />
-    <xs:include schemaLocation = 'Maintainer.xsd' />
-    <xs:include schemaLocation = 'License.xsd' />
-    <xs:include schemaLocation = 'Version.xsd' />
-    <xs:include schemaLocation = 'Name.xsd' />
-    <xs:include schemaLocation = 'Date.xsd' />
+    <xs:include schemaLocation = 'Package/Description.xsd' />
+    <xs:include schemaLocation = 'Package/Maintainer.xsd' />
+    <xs:include schemaLocation = 'Package/License.xsd' />
+    <xs:include schemaLocation = 'Package/Version.xsd' />
+    <xs:include schemaLocation = 'Package/Content.xsd' />
+    <xs:include schemaLocation = 'Package/Name.xsd' />
+    <xs:include schemaLocation = 'Package/Date.xsd' />
 
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 
@@ -34,6 +35,7 @@
                 <xs:choice maxOccurs = 'unbounded' >
 
                     <xs:element ref = 'description' />
+                    <xs:element ref = 'content' />
                     <xs:element ref = 'license' />
                     <xs:element ref = 'version' />
                     <xs:element ref = 'date' />
