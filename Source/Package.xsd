@@ -1,0 +1,74 @@
+<?xml
+    version = '1.1'
+    encoding = 'UTF-8'
+?>
+
+<xs:schema xmlns:xs = 'http://www.w3.org/2001/XMLSchema' >
+
+    <xs:include schemaLocation = 'Description.xsd' />
+    <xs:include schemaLocation = 'Maintainer.xsd' />
+    <xs:include schemaLocation = 'License.xsd' />
+    <xs:include schemaLocation = 'Version.xsd' />
+    <xs:include schemaLocation = 'Name.xsd' />
+    <xs:include schemaLocation = 'Date.xsd' />
+
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+    <xs:element name = 'package' >
+
+        <xs:annotation>
+            <xs:documentation xml:lang = 'en' >
+
+                [🛈](https://wiki.freecad.org/Package_Metadata#.3Cpackage.3E)
+
+                Declares an addon.
+
+            </xs:documentation>
+        </xs:annotation>
+
+        <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+        <xs:complexType>
+
+            <xs:sequence>
+                <xs:choice maxOccurs = 'unbounded' >
+
+                    <xs:element ref = 'description' />
+                    <xs:element ref = 'license' />
+                    <xs:element ref = 'version' />
+                    <xs:element ref = 'date' />
+                    <xs:element ref = 'name' />
+
+                    <xs:element
+                        maxOccurs = 'unbounded'
+                        ref = 'maintainer'
+                    />
+
+                </xs:choice>
+            </xs:sequence>
+
+            <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+            <xs:attribute
+                type = 'Manifest-Version'
+                name = 'format'
+                use = 'required'
+            >
+
+                <xs:annotation>
+                    <xs:documentation>
+
+                        [🛈](https://wiki.freecad.org/Package_Metadata#Attributes)
+
+                        Version of the format used in this manifest.
+
+                    </xs:documentation>
+                </xs:annotation>
+
+            </xs:attribute>
+
+        </xs:complexType>
+
+    </xs:element>
+
+</xs:schema>

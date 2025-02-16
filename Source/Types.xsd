@@ -3,13 +3,7 @@
     encoding = 'UTF-8'
 ?>
 
-<xs:schema
-    xmlns:xs = 'http://www.w3.org/2001/XMLSchema'
->
-
-    <xs:include schemaLocation = 'License.xsd' />
-
-    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<xs:schema xmlns:xs = 'http://www.w3.org/2001/XMLSchema' >
 
     <xs:simpleType name = 'Manifest-Version' >
 
@@ -21,13 +15,15 @@
 
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 
-    <xs:simpleType name = 'Version' >
+    <xs:simpleType name = 'Email' >
 
-        <xs:union memberTypes = 'Semantic-Version Calender-Version' />
+        <xs:restriction base = 'xs:string'>
+            <xs:pattern value = '[^@]+@[^\.]+\..+' />
+        </xs:restriction>
 
     </xs:simpleType>
 
-    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 
     <xs:simpleType name = 'Semantic-Version' >
 
@@ -44,48 +40,6 @@
         <xs:restriction base = 'xs:token'>
             <xs:pattern value = '\d{2,4}\.\d{2}\.\d{2}(-\w+)?' />
         </xs:restriction>
-
-    </xs:simpleType>
-
-    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-
-    <xs:simpleType name = 'Email' >
-
-        <xs:restriction base = 'xs:string'>
-            <xs:pattern value = '[^@]+@[^\.]+\..+' />
-        </xs:restriction>
-
-    </xs:simpleType>
-
-    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-
-    <xs:simpleType name = 'License' >
-
-        <xs:union>
-
-            <!-- Custom License -->
-
-            <xs:simpleType>
-                <xs:restriction base = 'xs:string' >
-                    <xs:pattern value = '[\s\S]+' />
-                </xs:restriction>
-            </xs:simpleType>
-
-            <!-- FreeCAD Specific -->
-
-            <xs:simpleType>
-                <xs:restriction base = 'xs:string' >
-                    <xs:enumeration value = 'UNLICENSED' />
-                </xs:restriction>
-            </xs:simpleType>
-
-            <!-- SPDX Licenses -->
-
-             <xs:simpleType>
-                <xs:restriction base = 'SPDX-License' />
-            </xs:simpleType>
-
-        </xs:union>
 
     </xs:simpleType>
 

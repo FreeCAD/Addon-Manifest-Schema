@@ -1,0 +1,26 @@
+<?xml
+    version = '1.1'
+    encoding = 'UTF-8'
+?>
+
+<xs:schema xmlns:xs = 'http://www.w3.org/2001/XMLSchema' >
+    <xs:element name = 'description' >
+
+        <xs:annotation>
+            <xs:documentation>
+
+                [🛈](https://wiki.freecad.org/Package_Metadata#.3Cdescription.3E)
+
+                Description displayed in the addon manager.
+
+            </xs:documentation>
+        </xs:annotation>
+
+        <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+        <xs:simpleType>
+            <xs:restriction base = 'xs:string' />
+        </xs:simpleType>
+
+    </xs:element>
+</xs:schema>

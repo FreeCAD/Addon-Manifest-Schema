@@ -47,17 +47,18 @@ def resolveIncludes ( parent , base , depth ):
         file = urljoin(base + '/', file)
 
         if file in files :
-            raise SyntaxError( f'File has already been included!' , file )
+
+            parent.remove(element)
+
+            continue
 
         files.add(file)
-
 
         with open(file,'rb') as file :
             node = parse(file).getroot()
 
         if node is None :
-            raise SyntaxError( f' Failed to find root in included file' , file )
-
+            raise SyntaxError( f' Failed to find root in included file!\n%s' % file )
 
         node = copy(node)
 

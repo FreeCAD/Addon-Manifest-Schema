@@ -6,6 +6,15 @@
         "program" : "Scripts/Bundle.py" ,
         "request" : "launch" ,
         "type" : "debugpy" ,
-        "name" : "Bundle"
+        "name" : "Bundle" ,
+
+        "autoReload" : {
+
+            "enable" : true ,
+
+            "include" : [
+                "Source/*.xsd",
+            ]
+        }
     }]
 }
