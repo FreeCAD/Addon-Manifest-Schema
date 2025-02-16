@@ -54,15 +54,15 @@ def resolveIncludes ( parent , base , depth ):
 
         files.add(file)
 
-        with open(file,'rb') as file :
-            node = parse(file).getroot()
+        with open(file,'rb') as handle :
+            node = parse(handle).getroot()
 
         if node is None :
             raise SyntaxError( f' Failed to find root in included file!\n%s' % file )
 
         node = copy(node)
 
-        resolveIncludes(node,base,depth - 1)
+        resolveIncludes(node,dirname(file),depth - 1)
 
         node.tail = ( node.tail or '' ) + ( element.tail or '' )
 
