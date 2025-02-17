@@ -1,0 +1,26 @@
+<?xml
+    version = '1.1'
+    encoding = 'UTF-8'
+?>
+
+<xs:schema xmlns:xs = 'http://www.w3.org/2001/XMLSchema' >
+
+    <xs:include schemaLocation = '../Helper/Dependency.xsd' />
+
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+    <xs:element name = 'replace' >
+
+        <xs:annotation>
+            <xs:documentation>
+
+                [🛈](https://wiki.freecad.org/Package_Metadata#.3Creplace.3E)
+
+                Replace
+
+            </xs:documentation>
+        </xs:annotation>
+
+    </xs:element>
+
+</xs:schema>

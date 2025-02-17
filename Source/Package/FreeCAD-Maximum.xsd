@@ -1,0 +1,32 @@
+<?xml
+    version = '1.1'
+    encoding = 'UTF-8'
+?>
+
+<xs:schema xmlns:xs = 'http://www.w3.org/2001/XMLSchema' >
+
+    <xs:include schemaLocation = '../Helper/Types.xsd' />
+
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+    <xs:element name = 'freecadmax' >
+
+        <xs:annotation>
+            <xs:documentation>
+
+                [🛈](https://wiki.freecad.org/Package_Metadata#.3Cfreecadmax.3E)
+
+                FreeCAD Maximum
+
+            </xs:documentation>
+        </xs:annotation>
+
+        <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+        <xs:simpleType>
+            <xs:restriction base = 'Basic-Semantic-Version' />
+        </xs:simpleType>
+
+    </xs:element>
+
+</xs:schema>

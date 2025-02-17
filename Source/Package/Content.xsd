@@ -17,18 +17,55 @@
         <xs:annotation>
             <xs:documentation>
 
-                [🛈](https://wiki.freecad.org/Package_Metadata#.3Cfile.3E)
+                [🛈](https://wiki.freecad.org/Package_Metadata#.3Ccontent.3E)
 
-                File
+                Content
 
             </xs:documentation>
         </xs:annotation>
 
         <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 
-        <xs:simpleType>
-            <xs:restriction base = 'xs:anyURI' />
-        </xs:simpleType>
+        <xs:complexType>
+            <xs:choice>
+
+                <xs:element
+                    name = 'preferencepack'
+                    type = 'Content'
+                />
+
+                <xs:element
+                    name = 'workbench'
+                    type = 'Content'
+                />
+
+                 <xs:element
+                    name = 'macro'
+                    type = 'Content'
+                />
+
+            </xs:choice>
+        </xs:complexType>
 
     </xs:element>
+
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+    <xs:complexType name = 'Content' >
+        <xs:sequence>
+            <xs:choice maxOccurs = 'unbounded' >
+
+                <xs:element ref = 'subdirectory' />
+                <xs:element ref = 'content' />
+                <xs:element ref = 'icon' />
+
+                <xs:element
+                    maxOccurs = 'unbounded'
+                    ref = 'file'
+                />
+
+            </xs:choice>
+        </xs:sequence>
+    </xs:complexType>
+
 </xs:schema>

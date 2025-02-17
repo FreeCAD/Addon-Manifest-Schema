@@ -5,13 +5,22 @@
 
 <xs:schema xmlns:xs = 'http://www.w3.org/2001/XMLSchema' >
 
+    <xs:include schemaLocation = 'Package/FreeCAD-Minimum.xsd' />
+    <xs:include schemaLocation = 'Package/FreeCAD-Maximum.xsd' />
+    <xs:include schemaLocation = 'Package/Python-Minimum.xsd' />
     <xs:include schemaLocation = 'Package/Description.xsd' />
     <xs:include schemaLocation = 'Package/Maintainer.xsd' />
+    <xs:include schemaLocation = 'Package/Conflict.xsd' />
     <xs:include schemaLocation = 'Package/License.xsd' />
     <xs:include schemaLocation = 'Package/Version.xsd' />
+    <xs:include schemaLocation = 'Package/Replace.xsd' />
     <xs:include schemaLocation = 'Package/Content.xsd' />
+    <xs:include schemaLocation = 'Package/Depend.xsd' />
+    <xs:include schemaLocation = 'Package/Author.xsd' />
     <xs:include schemaLocation = 'Package/Name.xsd' />
     <xs:include schemaLocation = 'Package/Date.xsd' />
+    <xs:include schemaLocation = 'Package/Url.xsd' />
+    <xs:include schemaLocation = 'Package/Tag.xsd' />
 
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 
@@ -45,6 +54,35 @@
                         maxOccurs = 'unbounded'
                         ref = 'maintainer'
                     />
+
+                    <xs:element
+                        maxOccurs = 'unbounded'
+                        ref = 'url'
+                    />
+
+                    <xs:element
+                        maxOccurs = 'unbounded'
+                        ref = 'depend'
+                    />
+
+                    <xs:element
+                        maxOccurs = 'unbounded'
+                        ref = 'conflict'
+                    />
+
+                    <xs:element
+                        maxOccurs = 'unbounded'
+                        ref = 'replace'
+                    />
+
+                    <xs:element
+                        maxOccurs = 'unbounded'
+                        ref = 'tag'
+                    />
+
+                    <xs:element ref = 'freecadmin' />
+                    <xs:element ref = 'freecadmax' />
+                    <xs:element ref = 'pythonmin' />
 
                 </xs:choice>
             </xs:sequence>

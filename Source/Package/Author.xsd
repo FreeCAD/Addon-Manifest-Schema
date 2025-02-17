@@ -10,16 +10,16 @@
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 
     <xs:element
-        name = 'maintainer'
+        name = 'author'
         type = 'Contact'
     >
 
         <xs:annotation>
             <xs:documentation>
 
-                [🛈](https://wiki.freecad.org/Package_Metadata#.3Cmaintainer.3E)
+                [🛈](https://wiki.freecad.org/Package_Metadata#.3Cauthor.3E)
 
-                Maintainer
+                Author
 
             </xs:documentation>
         </xs:annotation>

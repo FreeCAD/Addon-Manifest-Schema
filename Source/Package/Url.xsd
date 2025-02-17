@@ -1,0 +1,60 @@
+<?xml
+    version = '1.1'
+    encoding = 'UTF-8'
+?>
+
+<xs:schema xmlns:xs = 'http://www.w3.org/2001/XMLSchema' >
+
+    <xs:element
+        name = 'url'
+    >
+
+        <xs:annotation>
+            <xs:documentation>
+
+                [🛈](https://wiki.freecad.org/Package_Metadata#.3Curl.3E)
+
+                Url
+
+            </xs:documentation>
+        </xs:annotation>
+
+        <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+        <xs:complexType>
+            <xs:simpleContent>
+                <xs:extension base = 'xs:anyURI' >
+
+                    <xs:attribute
+                        name = 'type'
+                        use = 'required'
+                    >
+
+                        <xs:simpleType>
+                            <xs:restriction base = 'xs:string' >
+                                <xs:enumeration value = 'documentation' />
+                                <xs:enumeration value = 'bugtracker' />
+                                <xs:enumeration value = 'repository' />
+                                <xs:enumeration value = 'discussion' />
+                                <xs:enumeration value = 'website' />
+                                <xs:enumeration value = 'readme' />
+                            </xs:restriction>
+                        </xs:simpleType>
+
+                    </xs:attribute>
+
+                    <!-- Workaround for missing XSD 1.1 support in VSCode -->
+
+                    <xs:attribute
+                        type = 'xs:string'
+                        name = 'branch'
+                        use = 'optional'
+                    />
+
+                </xs:extension>
+            </xs:simpleContent>
+        </xs:complexType>
+
+    </xs:element>
+
+</xs:schema>

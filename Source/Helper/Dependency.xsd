@@ -1,0 +1,79 @@
+<?xml
+    version = '1.1'
+    encoding = 'UTF-8'
+?>
+
+<xs:schema xmlns:xs = 'http://www.w3.org/2001/XMLSchema' >
+
+    <xs:include schemaLocation = '../Helper/Types.xsd' />
+
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+    <xs:complexType name = 'Dependency' >
+        <xs:simpleContent>
+
+            <xs:extension base = 'xs:string' >
+
+                <xs:attribute
+                    name = 'version_lt'
+                    type = 'Basic-Semantic-Version'
+                    use = 'optional'
+                />
+
+                <xs:attribute
+                    name = 'version_lte'
+                    type = 'Basic-Semantic-Version'
+                    use = 'optional'
+                />
+
+                <xs:attribute
+                    name = 'version_eq'
+                    type = 'Basic-Semantic-Version'
+                    use = 'optional'
+                />
+
+                <xs:attribute
+                    name = 'version_gt'
+                    type = 'Basic-Semantic-Version'
+                    use = 'optional'
+                />
+
+                <xs:attribute
+                    name = 'version_gte'
+                    type = 'Basic-Semantic-Version'
+                    use = 'optional'
+                />
+
+                <xs:attribute
+                    name = 'condition'
+                    type = 'xs:string'
+                    use = 'optional'
+                />
+
+                <xs:attribute
+                    name = 'optional'
+                    type = 'xs:boolean'
+                    use = 'required'
+                />
+
+                <xs:attribute
+                    name = 'type'
+                    use = 'required'
+                >
+
+                    <xs:simpleType>
+                        <xs:restriction base = 'xs:string' >
+                            <xs:enumeration value = 'internal' />
+                            <xs:enumeration value = 'python' />
+                            <xs:enumeration value = 'addon' />
+                        </xs:restriction>
+                    </xs:simpleType>
+
+                </xs:attribute>
+
+            </xs:extension>
+
+        </xs:simpleContent>
+    </xs:complexType>
+
+</xs:schema>
