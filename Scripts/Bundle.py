@@ -1,7 +1,7 @@
 
 from xml.etree.ElementTree import ElementTree , ParseError , parse , indent
 from urllib.parse import urljoin
-from os.path import exists , dirname , abspath
+from os.path import dirname , relpath , exists , join , sep
 from copy import copy
 from sys import exit , stderr
 from os import makedirs
@@ -9,8 +9,10 @@ from os import makedirs
 
 Include_Tag = '{http://www.w3.org/2001/XMLSchema}include'
 
-Output = '.build/Schema.xsd'
-Input = 'Source/mod.xsd'
+Project_Path = dirname(dirname(__file__))
+Output_Path = join(Project_Path,'.build','Schema.xsd')
+Source_Path = join(Project_Path,'Source')
+Input_Path = join(Source_Path,'mod.xsd')
 
 Max_Depth = 6
 
@@ -18,11 +20,10 @@ Max_Depth = 6
 files = set()
 
 
-def resolveIncludes ( parent , base , depth ):
+def resolveIncludes ( parent , base , depth = Max_Depth ):
 
     if depth == 0 :
         raise SyntaxError( f'Maximum inclusion depth reached!' , Max_Depth )
-
 
     index = 0
 
@@ -30,26 +31,19 @@ def resolveIncludes ( parent , base , depth ):
 
         element = parent[ index ]
 
-
         if element.tag != Include_Tag :
-
             resolveIncludes(element,base,depth)
-
             index += 1
-
             continue
-
 
         file = element.get('schemaLocation')
 
-        print( f'Including file : { file }' )
+        file = urljoin( base + sep , file )
 
-        file = urljoin(base + '/', file)
+        print( f'+ 📄 { relpath(file,Source_Path) }' )
 
         if file in files :
-
             parent.remove(element)
-
             continue
 
         files.add(file)
@@ -83,21 +77,38 @@ def resolveIncludes ( parent , base , depth ):
             index += 1
 
 
+def resolveIncludeTree ( tree ):
+
+    print( f'Resolving includes:' )
+
+    base = dirname(Input_Path)
+
+    root = tree.getroot()
+
+    resolveIncludes(root,base)
+
+    print()
+    print( f'Resolved { len(files) } includes.')
+    print()
+
+
 def makeBuildFolder ():
 
-    folder = dirname(Output)
+    folder = dirname(Output_Path)
 
     if exists(folder) :
         return
 
-    print('Creating .build folder')
+    print('Creating `.build` folder')
+    print()
 
     makedirs(folder)
 
 
 def writeSchema ( tree : ElementTree , path : str ):
 
-    print( f'Writing schema to : { path }' )
+    print( f'Writing bundled schema.' )
+    print()
 
     indent (
         space = '    ' ,
@@ -114,20 +125,25 @@ def writeSchema ( tree : ElementTree , path : str ):
 
 def main ():
 
-    try :
+    print( f'Bundling multiple XSD files into one.' )
 
-        input_path = abspath(Input)
-        base_dir = dirname(input_path)
+    print( f'Project Folder : { Project_Path }' )
+    print( f'Entrypoint : { relpath(Input_Path,Project_Path) }' )
+    print( f'Bundle : { relpath(Output_Path,Project_Path) }' )
+
+    print()
+
+    try :
 
         makeBuildFolder()
 
-        tree = parse(input_path)
+        tree = parse(Input_Path)
 
-        root = tree.getroot()
+        resolveIncludeTree(tree)
 
-        resolveIncludes(root,base_dir,Max_Depth)
+        writeSchema(tree,Output_Path)
 
-        writeSchema(tree,Output)
+        print( f'Done.' )
 
         exit(0)
         return
@@ -145,6 +161,3 @@ def main ():
 
 if __name__ == '__main__' :
     main()
-
-
-
