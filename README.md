@@ -64,6 +64,9 @@ used to approximate the actual schema structure.
 
     The `<package>` tag uses the latter to facilitate `<maintainer>` & `<url>`
     
+-   The `<url>` tag should require a `branch` attribute if the  
+    `type` attribute was set to `repository`, however currently  
+    the `branch` attribute will always be present & optional.
 
 
 [FreeCAD Addon Manifest]: https://wiki.freecad.org/Package_Metadata
