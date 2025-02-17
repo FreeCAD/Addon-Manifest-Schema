@@ -29,6 +29,10 @@ python Scripts/Bundle.py
 
 This will create a bundled file at `.build/Schema.xsd`
 
+### Preview
+
+[![Bundler Showcase 1]](#)
+
 <br/>
 
 ## Usage
@@ -71,3 +75,5 @@ used to approximate the actual schema structure.
 
 [FreeCAD Addon Manifest]: https://wiki.freecad.org/Package_Metadata
 [Support]: https://github.com/redhat-developer/vscode-xml/issues/222
+
+[Bundler Showcase 1]: ./Assets/Images/Bundler-Showcase-1.webp
