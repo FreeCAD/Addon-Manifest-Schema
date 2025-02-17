@@ -18,6 +18,7 @@
 
     <xs:include schemaLocation = 'Content/SubDirectory.xsd' />
     <xs:include schemaLocation = 'Content/ClassName.xsd' />
+    <xs:include schemaLocation = 'Content/Workbench.xsd' />
     <xs:include schemaLocation = 'Content/Icon.xsd' />
     <xs:include schemaLocation = 'Content/File.xsd' />
 
@@ -46,8 +47,7 @@
                 />
 
                 <xs:element
-                    name = 'workbench'
-                    type = 'Content'
+                    ref = 'workbench'
                 />
 
                  <xs:element

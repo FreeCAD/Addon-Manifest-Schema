@@ -8,6 +8,7 @@
     <xs:include schemaLocation = 'Package/FreeCAD-Minimum.xsd' />
     <xs:include schemaLocation = 'Package/FreeCAD-Maximum.xsd' />
     <xs:include schemaLocation = 'Package/Python-Minimum.xsd' />
+    <xs:include schemaLocation = 'Package/Content/Icon.xsd' />
     <xs:include schemaLocation = 'Package/Description.xsd' />
     <xs:include schemaLocation = 'Package/Maintainer.xsd' />
     <xs:include schemaLocation = 'Package/Conflict.xsd' />
@@ -49,10 +50,16 @@
                     <xs:element ref = 'version' />
                     <xs:element ref = 'date' />
                     <xs:element ref = 'name' />
+                    <xs:element ref = 'icon' />
 
                     <xs:element
                         maxOccurs = 'unbounded'
                         ref = 'maintainer'
+                    />
+
+                    <xs:element
+                        maxOccurs = 'unbounded'
+                        ref = 'author'
                     />
 
                     <xs:element
