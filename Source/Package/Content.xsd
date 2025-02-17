@@ -5,13 +5,7 @@
 
 <xs:schema xmlns:xs = 'http://www.w3.org/2001/XMLSchema' >
 
-    <xs:include schemaLocation = './FreeCAD-Minimum.xsd' />
-    <xs:include schemaLocation = './FreeCAD-Maximum.xsd' />
-    <xs:include schemaLocation = './Python-Minimum.xsd' />
     <xs:include schemaLocation = './Description.xsd' />
-    <xs:include schemaLocation = './Conflict.xsd' />
-    <xs:include schemaLocation = './Replace.xsd' />
-    <xs:include schemaLocation = './Depend.xsd' />
     <xs:include schemaLocation = './Name.xsd' />
     <xs:include schemaLocation = './Url.xsd' />
     <xs:include schemaLocation = './Tag.xsd' />
@@ -68,9 +62,6 @@
 
                 <xs:element ref = 'subdirectory' />
                 <xs:element ref = 'description' />
-                <xs:element ref = 'freecadmin' />
-                <xs:element ref = 'freecadmax' />
-                <xs:element ref = 'pythonmin' />
                 <xs:element ref = 'icon' />
                 <xs:element ref = 'name' />
 
@@ -83,21 +74,6 @@
                 <xs:element
                     maxOccurs = 'unbounded'
                     ref = 'url'
-                />
-
-                <xs:element
-                    maxOccurs = 'unbounded'
-                    ref = 'depend'
-                />
-
-                <xs:element
-                    maxOccurs = 'unbounded'
-                    ref = 'conflict'
-                />
-
-                <xs:element
-                    maxOccurs = 'unbounded'
-                    ref = 'replace'
                 />
 
                 <xs:element
