@@ -11,7 +11,15 @@
 
                 [🛈](https://wiki.freecad.org/Package_Metadata#.3Cdate.3E)
 
-                Date
+                Date the current version was published.
+
+                <![CDATA[
+
+                    <p>  </p>
+
+                ]]>
+
+                
 
             </xs:documentation>
         </xs:annotation>

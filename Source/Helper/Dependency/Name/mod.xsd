@@ -1,0 +1,39 @@
+<?xml
+    version = '1.1'
+    encoding = 'UTF-8'
+?>
+
+<xs:schema xmlns:xs = 'http://www.w3.org/2001/XMLSchema' >
+
+    <xs:include schemaLocation = './Python-Package.xsd' />
+    <xs:include schemaLocation = './Internal-Mod.xsd' />
+
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+    <xs:simpleType name = 'Dependency-Name' >
+        <xs:union>
+
+            <!-- Custom -->
+
+            <xs:simpleType>
+                <xs:restriction base = 'xs:string' >
+                    <xs:pattern value = '[\s\S]+' />
+                </xs:restriction>
+            </xs:simpleType>
+
+            <!-- Python -->
+
+            <xs:simpleType>
+                <xs:restriction base = 'Python-Package' />
+            </xs:simpleType>
+
+            <!-- Internal -->
+
+            <xs:simpleType>
+                <xs:restriction base = 'Internal-Mod' />
+            </xs:simpleType>
+
+        </xs:union>
+
+    </xs:simpleType>
+</xs:schema>

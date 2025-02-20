@@ -19,7 +19,7 @@
 
                 [🛈](https://wiki.freecad.org/Package_Metadata#.3Cauthor.3E)
 
-                Author
+                The publicly listed author(s) of the addon.
 
             </xs:documentation>
         </xs:annotation>

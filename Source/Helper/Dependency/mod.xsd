@@ -1,0 +1,65 @@
+<?xml
+    version = '1.1'
+    encoding = 'UTF-8'
+?>
+
+<xs:schema xmlns:xs = 'http://www.w3.org/2001/XMLSchema' >
+
+    <xs:include schemaLocation = './Version-Greater-Equal.xsd' />
+    <xs:include schemaLocation = './Version-Less-Equal.xsd' />
+    <xs:include schemaLocation = './Version-Greater.xsd' />
+    <xs:include schemaLocation = './Version-Equal.xsd' />
+    <xs:include schemaLocation = './Version-Less.xsd' />
+    <xs:include schemaLocation = './Optional.xsd' />
+    <xs:include schemaLocation = './Type.xsd' />
+
+    <xs:include schemaLocation = './Name/mod.xsd' />
+
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+    <xs:complexType name = 'Dependency' >
+        <xs:simpleContent>
+
+            <xs:extension base = 'Dependency-Name' >
+
+                <xs:attribute
+                    ref = 'version_lt'
+                    use = 'optional'
+                />
+
+                <xs:attribute
+                    ref = 'version_lte'
+                    use = 'optional'
+                />
+
+                <xs:attribute
+                    ref = 'version_eq'
+                    use = 'optional'
+                />
+
+                <xs:attribute
+                    ref = 'version_gt'
+                    use = 'optional'
+                />
+
+                <xs:attribute
+                    ref = 'version_gte'
+                    use = 'optional'
+                />
+
+                <xs:attribute
+                    ref = 'optional'
+                    use = 'required'
+                />
+
+                <xs:attribute
+                    ref = 'type'
+                    use = 'required'
+                />
+
+            </xs:extension>
+
+        </xs:simpleContent>
+    </xs:complexType>
+
+</xs:schema>

@@ -5,7 +5,7 @@
 
 <xs:schema xmlns:xs = 'http://www.w3.org/2001/XMLSchema' >
 
-    <xs:include schemaLocation = '../Helper/Dependency.xsd' />
+    <xs:include schemaLocation = '../Helper/Dependency/mod.xsd' />
 
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 
@@ -16,10 +16,16 @@
 
                 [🛈](https://wiki.freecad.org/Package_Metadata#.3Cdepend.3E)
 
-                Depend
+                Declares a dependency on an internal mode, a community addon or an allowed Python package.
 
             </xs:documentation>
         </xs:annotation>
+
+        <xs:complexType>
+            <xs:complexContent>
+                <xs:extension base = 'Dependency' />
+            </xs:complexContent>
+        </xs:complexType>
 
     </xs:element>
 

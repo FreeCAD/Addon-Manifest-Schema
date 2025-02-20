@@ -1,0 +1,46 @@
+<?xml
+    version = '1.1'
+    encoding = 'UTF-8'
+?>
+
+<xs:schema xmlns:xs = 'http://www.w3.org/2001/XMLSchema' >
+
+    <xs:attribute
+        name = 'type'
+    >
+
+        <xs:annotation>
+            <xs:documentation>
+
+                <![CDATA[
+
+                    <h3>
+
+                        <a href = 'https://wiki.freecad.org/Package_Metadata#Attributes_6' >
+                            🛈 ⁣
+                        </a>
+
+                        Type
+
+                    </h3>
+
+                    <hr>
+
+                    <p> Specifies the type of this dependency. </p>
+
+                ]]>
+
+            </xs:documentation>
+        </xs:annotation>
+
+        <xs:simpleType>
+            <xs:restriction base = 'xs:string' >
+                <xs:enumeration value = 'internal' />
+                <xs:enumeration value = 'python' />
+                <xs:enumeration value = 'addon' />
+            </xs:restriction>
+        </xs:simpleType>
+
+    </xs:attribute>
+
+</xs:schema>

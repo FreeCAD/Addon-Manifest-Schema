@@ -65,7 +65,6 @@
                 <xs:element ref = 'icon' />
                 <xs:element ref = 'name' />
 
-
                 <xs:element
                     maxOccurs = 'unbounded'
                     ref = 'file'

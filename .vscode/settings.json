@@ -1,0 +1,41 @@
+{
+    "hidefiles.configurationType": "local",
+    "hidefiles.globalConfig": {
+        "profiles": [
+            {
+                "name": "Default",
+                "detail": "",
+                "description": "Test",
+                "hidden": [
+                    ".vscode/"
+                ]
+            },
+            {
+                "name": "Strict",
+                "detail": "Hide everything not immediately required",
+                "hidden": [
+                    "$Default",
+                    ".venv/",
+                    "LICENSE_SCHEMA",
+                    ".editorconfig",
+                    ".gitignore",
+                    "LICENSE_SCRIPTS"
+                ]
+            }
+        ]
+    },
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true,
+        ".vscode/": true,
+        ".venv/": true,
+        "LICENSE_SCHEMA": true,
+        ".editorconfig": true,
+        ".gitignore": true,
+        "LICENSE_SCRIPTS": true
+    },
+    "hidefiles.selectedProfile": "Strict"
+}

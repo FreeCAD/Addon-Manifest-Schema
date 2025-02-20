@@ -16,7 +16,7 @@
 
                 [🛈](https://wiki.freecad.org/Package_Metadata#.3Cfreecadmax.3E)
 
-                FreeCAD Maximum
+                The latest [Release of FreeCAD](https://github.com/FreeCAD/FreeCAD/releases) this addon works with.
 
             </xs:documentation>
         </xs:annotation>
