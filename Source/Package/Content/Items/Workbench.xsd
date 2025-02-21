@@ -5,15 +5,13 @@
 
 <xs:schema xmlns:xs = 'http://www.w3.org/2001/XMLSchema' >
 
-    <xs:include schemaLocation = '../Description.xsd' />
-    <xs:include schemaLocation = '../Name.xsd' />
-    <xs:include schemaLocation = '../Url.xsd' />
-    <xs:include schemaLocation = '../Tag.xsd' />
+    <xs:include schemaLocation = '../SubDirectory.xsd' />
+    <xs:include schemaLocation = '../ClassName.xsd' />
+    <xs:include schemaLocation = '../../Name.xsd' />
+    <xs:include schemaLocation = '../Icon.xsd' />
+    <xs:include schemaLocation = '../File.xsd' />
 
-    <xs:include schemaLocation = './SubDirectory.xsd' />
-    <xs:include schemaLocation = './ClassName.xsd' />
-    <xs:include schemaLocation = './Icon.xsd' />
-    <xs:include schemaLocation = './File.xsd' />
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 
     <xs:element name = 'workbench' >
 
@@ -34,7 +32,6 @@
                 <xs:choice maxOccurs = 'unbounded' >
 
                     <xs:element ref = 'subdirectory' />
-                    <xs:element ref = 'description' />
                     <xs:element ref = 'classname' />
                     <xs:element ref = 'icon' />
                     <xs:element ref = 'name' />
@@ -42,16 +39,6 @@
                     <xs:element
                         maxOccurs = 'unbounded'
                         ref = 'file'
-                    />
-
-                    <xs:element
-                        maxOccurs = 'unbounded'
-                        ref = 'url'
-                    />
-
-                    <xs:element
-                        maxOccurs = 'unbounded'
-                        ref = 'tag'
                     />
 
                 </xs:choice>

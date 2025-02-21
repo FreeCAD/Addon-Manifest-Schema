@@ -1,0 +1,62 @@
+<?xml
+    version = '1.1'
+    encoding = 'UTF-8'
+?>
+
+<xs:schema xmlns:xs = 'http://www.w3.org/2001/XMLSchema' >
+
+    <xs:include schemaLocation = './Items/PreferencePack.xsd' />
+    <xs:include schemaLocation = './Items/Workbench.xsd' />
+    <xs:include schemaLocation = './Items/Macro.xsd' />
+
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+    <xs:element name = 'content' >
+
+        <xs:annotation>
+            <xs:documentation>
+
+                <![CDATA[
+
+                    <h3>
+
+                        <a href = 'https://wiki.freecad.org/Package_Metadata#.3Ccontent.3E' >
+                            🛈 ⁣
+                        </a>
+
+                        Content
+
+                    </h3>
+
+                    <hr>
+
+                    <p> Declares what content items the addon provides. </p>
+
+                ]]>
+
+            </xs:documentation>
+        </xs:annotation>
+
+        <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+        <xs:complexType>
+            <xs:choice>
+
+                <xs:element
+                    ref = 'preferencepack'
+                />
+
+                <xs:element
+                    ref = 'workbench'
+                />
+
+                 <xs:element
+                    ref = 'macro'
+                />
+
+            </xs:choice>
+        </xs:complexType>
+
+    </xs:element>
+
+</xs:schema>

@@ -5,23 +5,23 @@
 
 <xs:schema xmlns:xs = 'http://www.w3.org/2001/XMLSchema' >
 
-    <xs:include schemaLocation = 'Package/FreeCAD-Minimum.xsd' />
-    <xs:include schemaLocation = 'Package/FreeCAD-Maximum.xsd' />
-    <xs:include schemaLocation = 'Package/Python-Minimum.xsd' />
-    <xs:include schemaLocation = 'Package/Content/Icon.xsd' />
-    <xs:include schemaLocation = 'Package/Description.xsd' />
-    <xs:include schemaLocation = 'Package/Maintainer.xsd' />
-    <xs:include schemaLocation = 'Package/Conflict.xsd' />
-    <xs:include schemaLocation = 'Package/License.xsd' />
-    <xs:include schemaLocation = 'Package/Version.xsd' />
-    <xs:include schemaLocation = 'Package/Replace.xsd' />
-    <xs:include schemaLocation = 'Package/Content.xsd' />
-    <xs:include schemaLocation = 'Package/Depend.xsd' />
-    <xs:include schemaLocation = 'Package/Author.xsd' />
-    <xs:include schemaLocation = 'Package/Name.xsd' />
-    <xs:include schemaLocation = 'Package/Date.xsd' />
-    <xs:include schemaLocation = 'Package/Url.xsd' />
-    <xs:include schemaLocation = 'Package/Tag.xsd' />
+    <xs:include schemaLocation = './FreeCAD-Minimum.xsd' />
+    <xs:include schemaLocation = './FreeCAD-Maximum.xsd' />
+    <xs:include schemaLocation = './Python-Minimum.xsd' />
+    <xs:include schemaLocation = './Content/Icon.xsd' />
+    <xs:include schemaLocation = './Description.xsd' />
+    <xs:include schemaLocation = './Content/mod.xsd' />
+    <xs:include schemaLocation = './Maintainer.xsd' />
+    <xs:include schemaLocation = './Conflict.xsd' />
+    <xs:include schemaLocation = './License.xsd' />
+    <xs:include schemaLocation = './Version.xsd' />
+    <xs:include schemaLocation = './Replace.xsd' />
+    <xs:include schemaLocation = './Depend.xsd' />
+    <xs:include schemaLocation = './Author.xsd' />
+    <xs:include schemaLocation = './Name.xsd' />
+    <xs:include schemaLocation = './Date.xsd' />
+    <xs:include schemaLocation = './Url.xsd' />
+    <xs:include schemaLocation = './Tag.xsd' />
 
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 
