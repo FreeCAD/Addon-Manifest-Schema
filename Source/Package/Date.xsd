@@ -9,17 +9,23 @@
         <xs:annotation>
             <xs:documentation>
 
-                [🛈](https://wiki.freecad.org/Package_Metadata#.3Cdate.3E)
-
-                Date the current version was published.
-
                 <![CDATA[
 
-                    <p>  </p>
+                    <h3>
+
+                        <a href = 'https://wiki.freecad.org/Package_Metadata#.3Cdate.3E' >
+                            🛈 ⁣
+                        </a>
+
+                        Date
+
+                    </h3>
+
+                    <hr>
+
+                    <p> Date the current version was published. </p>
 
                 ]]>
-
-                
 
             </xs:documentation>
         </xs:annotation>

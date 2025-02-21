@@ -9,11 +9,21 @@
         <xs:annotation>
             <xs:documentation>
 
-                [🛈](https://wiki.freecad.org/Package_Metadata#.3Cname.3E)
-
-                Name displayed in the addon manager.
-
                 <![CDATA[
+
+                    <h3>
+
+                        <a href = 'https://wiki.freecad.org/Package_Metadata#.3Cname.3E' >
+                            🛈 ⁣
+                        </a>
+
+                        Name
+
+                    </h3>
+
+                    <hr>
+
+                    <p> Name displayed in the addon manager. </p>
 
                     <p> Should be a simple, unique & descriptive name. </p>
 

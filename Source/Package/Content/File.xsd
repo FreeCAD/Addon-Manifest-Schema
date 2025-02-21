@@ -9,9 +9,23 @@
         <xs:annotation>
             <xs:documentation>
 
-                [🛈](https://wiki.freecad.org/Package_Metadata#.3Cfile.3E)
+                <![CDATA[
 
-                File
+                    <h3>
+
+                        <a href = 'https://wiki.freecad.org/Package_Metadata#.3Cfile.3E' >
+                            🛈 ⁣
+                        </a>
+
+                        File
+
+                    </h3>
+
+                    <hr>
+
+                    <p> Declares the entrypoint of a macro / preference pack. </p>
+
+                ]]>
 
             </xs:documentation>
         </xs:annotation>

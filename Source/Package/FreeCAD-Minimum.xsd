@@ -14,9 +14,29 @@
         <xs:annotation>
             <xs:documentation>
 
-                [🛈](https://wiki.freecad.org/Package_Metadata#.3Cfreecadmin.3E)
+                <![CDATA[
 
-                The earliest [Release of FreeCAD](https://github.com/FreeCAD/FreeCAD/releases) this addon works with.
+                    <h3>
+
+                        <a href = 'https://wiki.freecad.org/Package_Metadata#.3Cfreecadmin.3E' >
+                            🛈 ⁣
+                        </a>
+
+                        FreeCAD Maximum
+
+                    </h3>
+
+                    <hr>
+
+                    <p>
+                        The earliest
+                        <a href = 'https://github.com/FreeCAD/FreeCAD/releases' >
+                            Release of FreeCAD
+                        </a>
+                        this addon works with.
+                    </p>
+
+                ]]>
 
             </xs:documentation>
         </xs:annotation>

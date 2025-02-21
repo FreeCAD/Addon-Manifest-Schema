@@ -14,9 +14,29 @@
         <xs:annotation>
             <xs:documentation>
 
-                [🛈](https://wiki.freecad.org/Package_Metadata#.3Cpythonmin.3E)
+                <![CDATA[
 
-                Python Minimum
+                    <h3>
+
+                        <a href = 'https://wiki.freecad.org/Package_Metadata#.3Cpythonmin.3E' >
+                            🛈 ⁣
+                        </a>
+
+                        Python Minimum
+
+                    </h3>
+
+                    <hr>
+
+                    <p>
+                        The earliest version of
+                        <a href = 'https://devguide.python.org/versions/' >
+                            Python
+                        </a>
+                        that is required to use this package.
+                    </p>
+
+                ]]>
 
             </xs:documentation>
         </xs:annotation>

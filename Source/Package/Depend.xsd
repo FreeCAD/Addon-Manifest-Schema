@@ -14,9 +14,23 @@
         <xs:annotation>
             <xs:documentation>
 
-                [🛈](https://wiki.freecad.org/Package_Metadata#.3Cdepend.3E)
+                <![CDATA[
 
-                Declares a dependency on an internal mode, a community addon or an allowed Python package.
+                    <h3>
+
+                        <a href = 'https://wiki.freecad.org/Package_Metadata#.3Cdepend.3E' >
+                            🛈 ⁣
+                        </a>
+
+                        Depend
+
+                    </h3>
+
+                    <hr>
+
+                    <p> Declares a dependency on an internal mode, a community addon or an allowed Python package. </p>
+
+                ]]>
 
             </xs:documentation>
         </xs:annotation>

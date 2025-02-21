@@ -30,9 +30,23 @@
         <xs:annotation>
             <xs:documentation xml:lang = 'en' >
 
-                [🛈](https://wiki.freecad.org/Package_Metadata#.3Cpackage.3E)
+                <![CDATA[
 
-                Declares an addon.
+                    <h3>
+
+                        <a href = 'https://wiki.freecad.org/Package_Metadata#.3Cpackage.3E' >
+                            🛈 ⁣
+                        </a>
+
+                        Package
+
+                    </h3>
+
+                    <hr>
+
+                    <p> Declares an addon. </p>
+
+                ]]>
 
             </xs:documentation>
         </xs:annotation>

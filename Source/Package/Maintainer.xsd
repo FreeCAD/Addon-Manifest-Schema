@@ -17,9 +17,23 @@
         <xs:annotation>
             <xs:documentation>
 
-                [🛈](https://wiki.freecad.org/Package_Metadata#.3Cmaintainer.3E)
+                <![CDATA[
 
-                Maintainer
+                    <h3>
+
+                        <a href = 'https://wiki.freecad.org/Package_Metadata#.3Cmaintainer.3E' >
+                            🛈 ⁣
+                        </a>
+
+                        Maintainer
+
+                    </h3>
+
+                    <hr>
+
+                    <p> The maintainer(s) that manage this package. </p>
+
+                ]]>
 
             </xs:documentation>
         </xs:annotation>

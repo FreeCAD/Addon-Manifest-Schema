@@ -14,9 +14,23 @@
         <xs:annotation>
             <xs:documentation>
 
-                [🛈](https://wiki.freecad.org/Package_Metadata#.3Creplace.3E)
+                <![CDATA[
 
-                Replace
+                    <h3>
+
+                        <a href = 'https://wiki.freecad.org/Package_Metadata#.3Creplace.3E' >
+                            🛈 ⁣
+                        </a>
+
+                        Replace
+
+                    </h3>
+
+                    <hr>
+
+                    <p> Declares that this package replaces the specified one. </p>
+
+                ]]>
 
             </xs:documentation>
         </xs:annotation>

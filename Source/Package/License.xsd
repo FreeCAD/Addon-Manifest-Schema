@@ -14,9 +14,23 @@
         <xs:annotation>
             <xs:documentation>
 
-                [🛈](https://wiki.freecad.org/Package_Metadata#.3Clicense.3E)
+                <![CDATA[
 
-                License(s) the content of your addon is published under.
+                    <h3>
+
+                        <a href = 'https://wiki.freecad.org/Package_Metadata#.3Clicense.3E' >
+                            🛈 ⁣
+                        </a>
+
+                        License
+
+                    </h3>
+
+                    <hr>
+
+                    <p> License(s) the content of your addon is published under. </p>
+
+                ]]>
 
             </xs:documentation>
         </xs:annotation>

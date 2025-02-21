@@ -9,9 +9,23 @@
         <xs:annotation>
             <xs:documentation>
 
-                [🛈](https://wiki.freecad.org/Package_Metadata#.3Cclassname.3E)
+                <![CDATA[
 
-                ClassName
+                    <h3>
+
+                        <a href = 'https://wiki.freecad.org/Package_Metadata#.3Cclassname.3E' >
+                            🛈 ⁣
+                        </a>
+
+                        Classname
+
+                    </h3>
+
+                    <hr>
+
+                    <p> The name of the corresponding Python class. </p>
+
+                ]]>
 
             </xs:documentation>
         </xs:annotation>

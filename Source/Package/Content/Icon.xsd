@@ -9,9 +9,23 @@
         <xs:annotation>
             <xs:documentation>
 
-                [🛈](https://wiki.freecad.org/Package_Metadata#.3Cicon.3E)
+                <![CDATA[
 
-                Icon displayed in the addon manager.
+                    <h3>
+
+                        <a href = 'https://wiki.freecad.org/Package_Metadata#.3Cicon.3E' >
+                            🛈 ⁣
+                        </a>
+
+                        Icon
+
+                    </h3>
+
+                    <hr>
+
+                    <p> Icon displayed in the addon manager. </p>
+
+                ]]>
 
             </xs:documentation>
         </xs:annotation>

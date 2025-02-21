@@ -14,9 +14,23 @@
         <xs:annotation>
             <xs:documentation>
 
-                [🛈](https://wiki.freecad.org/Package_Metadata#.3Cconflict.3E)
+                <![CDATA[
 
-                Conflict
+                    <h3>
+
+                        <a href = 'https://wiki.freecad.org/Package_Metadata#.3Cconflict.3E' >
+                            🛈 ⁣
+                        </a>
+
+                        Conflict
+
+                    </h3>
+
+                    <hr>
+
+                    <p> Declares a package that conflicts with this one. </p>
+
+                ]]>
 
             </xs:documentation>
         </xs:annotation>

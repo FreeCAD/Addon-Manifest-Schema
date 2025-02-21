@@ -14,9 +14,23 @@
         <xs:annotation>
             <xs:documentation>
 
-                [🛈](https://wiki.freecad.org/Package_Metadata#.3Cversion.3E)
+                <![CDATA[
 
-                Version
+                    <h3>
+
+                        <a href = 'https://wiki.freecad.org/Package_Metadata#.3Cversion.3E' >
+                            🛈 ⁣
+                        </a>
+
+                        Version
+
+                    </h3>
+
+                    <hr>
+
+                    <p> Version of the current state of the package. </p>
+
+                ]]>
 
             </xs:documentation>
         </xs:annotation>

@@ -9,9 +9,23 @@
         <xs:annotation>
             <xs:documentation>
 
-                [🛈](https://wiki.freecad.org/Package_Metadata#.3Ctag.3E)
+                <![CDATA[
 
-                Tag
+                    <h3>
+
+                        <a href = 'https://wiki.freecad.org/Package_Metadata#.3Ctag.3E' >
+                            🛈 ⁣
+                        </a>
+
+                        Tag
+
+                    </h3>
+
+                    <hr>
+
+                    <p> A keyword describing an aspect of this package. </p>
+
+                ]]>
 
             </xs:documentation>
         </xs:annotation>

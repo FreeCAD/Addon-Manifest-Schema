@@ -12,9 +12,23 @@
         <xs:annotation>
             <xs:documentation>
 
-                [🛈](https://wiki.freecad.org/Package_Metadata#.3Curl.3E)
+                <![CDATA[
 
-                Url
+                    <h3>
+
+                        <a href = 'https://wiki.freecad.org/Package_Metadata#.3Curl.3E' >
+                            🛈 ⁣
+                        </a>
+
+                        Url
+
+                    </h3>
+
+                    <hr>
+
+                    <p> Link to a resource related to this package. </p>
+
+                ]]>
 
             </xs:documentation>
         </xs:annotation>

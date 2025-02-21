@@ -16,9 +16,23 @@
         <xs:annotation>
             <xs:documentation>
 
-                [🛈](https://wiki.freecad.org/Package_Metadata#.3Cclassname.3E)
+                <![CDATA[
 
-                Preference Pack
+                    <h3>
+
+                        <a href = 'https://wiki.freecad.org/Package_Metadata#.3Cclassname.3E' >
+                            🛈 ⁣
+                        </a>
+
+                        Preference Pack
+
+                    </h3>
+
+                    <hr>
+
+                    <p> Declares a preference pack. </p>
+
+                ]]>
 
             </xs:documentation>
         </xs:annotation>

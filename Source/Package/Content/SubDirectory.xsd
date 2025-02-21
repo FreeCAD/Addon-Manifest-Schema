@@ -9,9 +9,23 @@
         <xs:annotation>
             <xs:documentation>
 
-                [🛈](https://wiki.freecad.org/Package_Metadata#.3Csubdirectory.3E)
+                <![CDATA[
 
-                SubDirectory
+                    <h3>
+
+                        <a href = 'https://wiki.freecad.org/Package_Metadata#.3Csubdirectory.3E' >
+                            🛈 ⁣
+                        </a>
+
+                        Sub-Directory
+
+                    </h3>
+
+                    <hr>
+
+                    <p> Folder the item's content is located in. </p>
+
+                ]]>
 
             </xs:documentation>
         </xs:annotation>

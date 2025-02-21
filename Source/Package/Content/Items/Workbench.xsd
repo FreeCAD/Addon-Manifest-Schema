@@ -18,9 +18,23 @@
         <xs:annotation>
             <xs:documentation>
 
-                [🛈](https://wiki.freecad.org/Package_Metadata#.3Cclassname.3E)
+                <![CDATA[
 
-                Workbench
+                    <h3>
+
+                        <a href = 'https://wiki.freecad.org/Package_Metadata#.3Cclassname.3E' >
+                            🛈 ⁣
+                        </a>
+
+                        Workbench
+
+                    </h3>
+
+                    <hr>
+
+                    <p> Declares a workbench. </p>
+
+                ]]>
 
             </xs:documentation>
         </xs:annotation>

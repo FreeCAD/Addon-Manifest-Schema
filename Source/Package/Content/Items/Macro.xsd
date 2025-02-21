@@ -16,9 +16,23 @@
         <xs:annotation>
             <xs:documentation>
 
-                [🛈](https://wiki.freecad.org/Package_Metadata#.3Cclassname.3E)
+                <![CDATA[
 
-                Macro
+                    <h3>
+
+                        <a href = 'https://wiki.freecad.org/Package_Metadata#.3Cclassname.3E' >
+                            🛈 ⁣
+                        </a>
+
+                        Macro
+
+                    </h3>
+
+                    <hr>
+
+                    <p> Declares a macro. </p>
+
+                ]]>
 
             </xs:documentation>
         </xs:annotation>

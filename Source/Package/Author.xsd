@@ -17,9 +17,23 @@
         <xs:annotation>
             <xs:documentation>
 
-                [🛈](https://wiki.freecad.org/Package_Metadata#.3Cauthor.3E)
+                <![CDATA[
 
-                The publicly listed author(s) of the addon.
+                    <h3>
+
+                        <a href = 'https://wiki.freecad.org/Package_Metadata#.3Cauthor.3E' >
+                            🛈 ⁣
+                        </a>
+
+                        Author
+
+                    </h3>
+
+                    <hr>
+
+                    <p> The publicly listed author(s) of the addon. </p>
+
+                ]]>
 
             </xs:documentation>
         </xs:annotation>
