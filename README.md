@@ -6,38 +6,61 @@ Schema ( XSD ) used for the [FreeCAD Addon Manifest].
 
 <br/>
 
-## Repository
-
-| Folder | Purpose |
-|:-------|:--------|
-| `Source`  | Tree or bite sized XSD source files.
-| `Scripts` | Python scripts used to bundle the XSD files.
-| `.build`  | Created when you run the bundle script.
+***The usage information is currently not functional as the***  
+***endpoint for the hosted version hasn't been set up yet.***
 
 <br/>
 
-## Bundling
-
-The schema can be used as is by referencing `Source/mod.xsd`
-
-If you need a single file instead you can bundle the  
-files in `Source` with the following python command:
-
-```sh
-python Scripts/Bundle.py
-```
-
-This will create a bundled file at `.build/Schema.xsd`
-
-### Preview
-
-[![Bundler Showcase 1]](#)
-
-<br/>
+<!----------------------------------------------------------------------------->
 
 ## Usage
 
-The following demonstrates how to reference the schema.
+To use this schema, you simply have to  
+reference it in your `package.xml` file.
+
+```xml
+<?xml-model
+    schematypens = 'HTTPS://FreeCAD.Org/Manifest'
+    href = '<Schema Url>'
+?>
+```
+
+*This replaces the `xmlns` attribute on `<package>`*
+
+<br/>
+
+<!----------------------------------------------------------------------------->
+
+### Endpoints
+
+Currently FreeCAD only supports one endpoint  
+that hosts the **latest** version of the schema at:
+
+```md
+https://FreeCAD.org/Manifest
+```
+
+<br/>
+
+<!----------------------------------------------------------------------------->
+
+### Older Versions
+
+In case you need to use an older version of the schema,  
+you can reference one of the [GitHub Releases] like so:
+
+```md
+https://github.com/FreeCAD/Addon-Manifest/releases/download/<Version>/Schema.xsd`
+```
+
+<br/>
+
+<!----------------------------------------------------------------------------->
+
+### Example
+
+The following code demonstrates how you can  
+reference this schema in your addon manifest:
 
 ```xml
 <?xml 
@@ -46,8 +69,8 @@ The following demonstrates how to reference the schema.
     standalone = 'no'
 ?>
 <?xml-model
-    schematypens = 'http://www.w3.org/2001/XMLSchema'
-    href = '<Schema Url>'
+    schematypens = 'HTTPS://FreeCAD.Org/Manifest'
+    href = 'https://FreeCAD.org/Manifest'
 ?>
 <package format = '1' >
     <!-- . . . -->
@@ -55,6 +78,57 @@ The following demonstrates how to reference the schema.
 ```
 
 <br/>
+
+<!----------------------------------------------------------------------------->
+
+## Repository
+
+| Folder | Purpose |
+|:-------|:--------|
+| `Source`  | Tree of bite sized XSD source files.
+| `Scripts` | Python script used to create a bundle.
+| `.build`  | Output folder for the bundled schema.
+
+<br/>
+
+<!----------------------------------------------------------------------------->
+
+## Development
+
+The source files of the schema can be used  
+directly by referencing `Source/mod.xsd`.
+
+```xml
+<?xml-model
+    schematypens = 'HTTPS://FreeCAD.Org/Manifest'
+    href = '/Path-To-Cloned-Repository/Source/mod.xsd'
+?>
+```
+
+<br/>
+
+<!----------------------------------------------------------------------------->
+
+### Bundling
+
+To bundle the `/Source/` files into a combined schema,  
+you just have to run the following Python command:
+
+```sh
+python Scripts/Bundle.py
+```
+
+This will create a bundled file at `.build/Schema.xsd`
+
+<!----------------------------------------------------------------------------->
+
+#### Preview
+
+[![Bundler Showcase 1]](#)
+
+<br/>
+
+<!----------------------------------------------------------------------------->
 
 ## Workarounds
 
@@ -72,8 +146,10 @@ used to approximate the actual schema structure.
     `type` attribute was set to `repository`, however currently  
     the `branch` attribute will always be present & optional.
 
+<!----------------------------------------------------------------------------->
 
 [FreeCAD Addon Manifest]: https://wiki.freecad.org/Package_Metadata
+[GitHub Releases]: https://github.com/FreeCAD/FreeCAD-Addon-Manifest-Schema/releases
 [Support]: https://github.com/redhat-developer/vscode-xml/issues/222
 
 [Bundler Showcase 1]: ./Assets/Images/Bundler-Showcase-1.webp
