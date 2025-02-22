@@ -33,7 +33,67 @@
         <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 
         <xs:simpleType>
-            <xs:restriction base = 'xs:string' />
+            <xs:union>
+
+                <!-- Example -->
+
+                <xs:simpleType>
+                    <xs:restriction base = 'xs:string' >
+
+                        <xs:enumeration value = 'Dark' />
+                        <xs:enumeration value = 'Light' />
+
+                        <xs:enumeration value = 'Parametric' />
+                        <xs:enumeration value = 'Scripting' />
+                        <xs:enumeration value = 'OpenSCAD' />
+                        <xs:enumeration value = 'Sketcher' />
+                        <xs:enumeration value = 'Assembly' />
+                        <xs:enumeration value = 'Curves' />
+                        <xs:enumeration value = 'NURBS' />
+                        <xs:enumeration value = 'Nodes' />
+                        <xs:enumeration value = 'Pipe' />
+                        <xs:enumeration value = 'Arch' />
+                        <xs:enumeration value = 'Beam' />
+                        <xs:enumeration value = 'Gear' />
+                        <xs:enumeration value = 'Mesh' />
+                        <xs:enumeration value = 'Step' />
+                        <xs:enumeration value = 'ACIS' />
+                        <xs:enumeration value = 'YAML' />
+                        <xs:enumeration value = 'F3D' />
+                        <xs:enumeration value = 'SAT' />
+                        <xs:enumeration value = 'IPT' />
+                        <xs:enumeration value = 'DXF' />
+                        <xs:enumeration value = 'BOM' />
+                        <xs:enumeration value = 'BIM' />
+                        <xs:enumeration value = 'FEM' />
+                        <xs:enumeration value = 'FEA' />
+                        <xs:enumeration value = 'PCB' />
+
+                        <xs:enumeration value = 'Fusion 360' />
+                        <xs:enumeration value = 'Inventor' />
+                        <xs:enumeration value = 'Autodesk' />
+                        <xs:enumeration value = 'KiCAD' />
+
+                        <xs:enumeration value = '3D Printing' />
+                        <xs:enumeration value = 'Electronics' />
+                        <xs:enumeration value = 'Import' />
+                        <xs:enumeration value = 'Export' />
+                        <xs:enumeration value = 'Cloud' />
+                        <xs:enumeration value = 'GCode' />
+                        <xs:enumeration value = 'Menu' />
+
+                        <xs:enumeration value = 'BuiltIn' />
+
+                    </xs:restriction>
+                </xs:simpleType>
+
+                <!-- General -->
+
+                <xs:simpleType>
+                    <xs:restriction base = 'xs:string' />
+                </xs:simpleType>
+
+            </xs:union>
         </xs:simpleType>
 
     </xs:element>
