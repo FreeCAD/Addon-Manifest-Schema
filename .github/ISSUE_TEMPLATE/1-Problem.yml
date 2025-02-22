@@ -1,0 +1,62 @@
+
+name : '📝 𝗥𝗲𝗽𝗼𝗿𝘁 𝗮 𝗣𝗿𝗼𝗯𝗹𝗲𝗺'
+
+description : Open an issue for your problem.
+
+assignees : [ PhoneDroid ]
+labels : []
+
+body:
+
+    -
+        type : checkboxes
+        id : Existing-Issue
+
+        attributes :
+
+            description : Please check if your [Issue](https://github.com/FreeCAD/FreeCAD-Addon-Manifest-Schema/issues) has already been reported.
+            label : Existing Issue
+
+            options:
+                -   required : true
+                    label : No issue exists for my problem.
+
+    -
+        type : checkboxes
+        id : Code-Of-Conduct
+
+        attributes :
+
+            description : Please confirm that you agree to follow [Code of Conduct](https://github.com/FreeCAD/FreeCAD-Addon-Manifest-Schema?tab=coc-ov-file#readme).
+            label : Code of Conduct
+
+            options:
+                -   required : true
+                    label : I agree to follow the [Code of Conduct](https://github.com/FreeCAD/FreeCAD-Addon-Manifest-Schema?tab=coc-ov-file#readme).
+
+    -
+        type : input
+        id : Version
+
+        attributes :
+
+            description : Please provide the version of the schema.
+            placeholder : 1.0.23
+            label : Version
+
+        validations:
+            required : true
+
+    -
+        type : textarea
+        id : Description
+
+        attributes :
+
+            description : Please describe the problem you are facing in as much detail as possible.
+            placeholder : I noticed x was missing.
+            label : Description
+
+        validations:
+            required : true
+

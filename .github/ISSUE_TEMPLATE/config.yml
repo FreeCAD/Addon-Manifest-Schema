@@ -1,6 +1,8 @@
 
+blank_issues_enabled : false
+
 contact_links:
 
-    -   about : The official FreeCAD Discord.
-        name : Discussions
-        url : https://discord.gg/w2cTKGzccC
+-   about : Come talk on the FreeCAD Discord.
+    name : '🤝 𝗗𝗶𝘀𝗰𝘂𝘀𝘀𝗶𝗼𝗻𝘀'
+    url : https://discord.gg/w2cTKGzccC
