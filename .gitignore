@@ -4,3 +4,4 @@ Test/**
 .venv/**
 .build/**
 package.xml
+.vscode/settings.json
