@@ -15,30 +15,6 @@
 
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 
-    <xs:simpleType name = 'Email' >
-        <xs:union>
-
-            <!-- Example -->
-
-            <xs:simpleType>
-                <xs:restriction base = 'xs:string' >
-                    <xs:enumeration value = 'User@Example.com' />
-                </xs:restriction>
-            </xs:simpleType>
-
-            <!-- General -->
-
-            <xs:simpleType>
-                <xs:restriction base = 'xs:string'>
-                    <xs:pattern value = '[^@]*@[^\.]+\..+' />
-                </xs:restriction>
-            </xs:simpleType>
-
-        </xs:union>
-    </xs:simpleType>
-
-    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-
     <xs:simpleType name = 'Basic-Semantic-Version' >
         <xs:union>
 
