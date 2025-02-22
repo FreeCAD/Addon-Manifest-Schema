@@ -1,0 +1,11 @@
+
+open_collective : freecad
+liberapay : FreeCAD
+github : FreeCAD
+paypal :
+
+custom : [
+    'https://wiki.freecad.org/Donate' ,
+    'https://www.paypal.com/donate/?hosted_button_id=M3Z8BGW6DB69Q' ,
+    'https://donate.stripe.com/14k3ei9TYgwFclq145'
+]
