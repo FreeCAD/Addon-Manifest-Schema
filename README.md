@@ -6,7 +6,9 @@
 This repository contains the source files for the XML  
 Schema ( XSD ) used for the [FreeCAD Addon Manifest].
 
-<br/>
+[![Button Discord]][Discord]  
+[![Button Website]][Website]  
+[![Button Contribute]][Contribute]
 
 ***The usage information is currently not functional as the***  
 ***endpoint for the hosted version hasn't been set up yet.***
@@ -163,8 +165,15 @@ used to approximate the actual schema structure.
 
 <!----------------------------------------------------------------------------->
 
+[Button Contribute]: https://img.shields.io/badge/Contribute-3D8DDF?style=for-the-badge
+[Button Discord]: https://img.shields.io/badge/Discord-5561EC?style=for-the-badge
+[Button Website]: https://img.shields.io/badge/Website-E24329?style=for-the-badge
+
 [FreeCAD Addon Manifest]: https://wiki.freecad.org/Package_Metadata
 [GitHub Releases]: https://github.com/FreeCAD/FreeCAD-Addon-Manifest-Schema/releases
+[Contribute]: ./.github/CONTRIBUTING.md
 [Support]: https://github.com/redhat-developer/vscode-xml/issues/222
+[Discord]: https://discord.gg/w2cTKGzccC
+[Website]: https://freecad.org
 
 [Bundler Showcase 1]: ./Assets/Images/Bundler-Showcase-1.webp
