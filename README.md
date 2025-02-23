@@ -17,7 +17,7 @@ Schema ( XSD ) used for the [FreeCAD Addon Manifest].
 
 <!----------------------------------------------------------------------------->
 
-## Showcase
+## 📷 Showcase
 
 The schema not only provides validation, autocomplete  
 and examples but also tooltips, here is one of them.
@@ -28,7 +28,7 @@ and examples but also tooltips, here is one of them.
 
 <!----------------------------------------------------------------------------->
 
-## Usage
+## 💬 Usage
 
 To use this schema, you simply have to  
 reference it in your `package.xml` file.
@@ -46,7 +46,7 @@ reference it in your `package.xml` file.
 
 <!----------------------------------------------------------------------------->
 
-### Endpoints
+### 📍 Endpoints
 
 Currently FreeCAD only supports one endpoint  
 that hosts the **latest** version of the schema at:
@@ -59,7 +59,7 @@ https://FreeCAD.org/Manifest
 
 <!----------------------------------------------------------------------------->
 
-### Older Versions
+### 💾 Older Versions
 
 In case you need to use an older version of the schema,  
 you can reference one of the [GitHub Releases] like so:
@@ -72,7 +72,7 @@ https://github.com/FreeCAD/Addon-Manifest/releases/download/<Version>/Schema.xsd
 
 <!----------------------------------------------------------------------------->
 
-### Example
+### 📄 Example
 
 The following code demonstrates how you can  
 reference this schema in your addon manifest:
@@ -96,7 +96,7 @@ reference this schema in your addon manifest:
 
 <!----------------------------------------------------------------------------->
 
-## Repository
+## 📑 Repository
 
 | Folder | Purpose |
 |:-------|:--------|
@@ -108,7 +108,7 @@ reference this schema in your addon manifest:
 
 <!----------------------------------------------------------------------------->
 
-## Development
+## 🔧 Development
 
 The source files of the schema can be used  
 directly by referencing `Source/mod.xsd`.
@@ -124,7 +124,7 @@ directly by referencing `Source/mod.xsd`.
 
 <!----------------------------------------------------------------------------->
 
-### Bundling
+### 📦 Bundling
 
 To bundle the `/Source/` files into a combined schema,  
 you just have to run the following Python command:
@@ -137,7 +137,7 @@ This will create a bundled file at `.build/Schema.xsd`
 
 <!----------------------------------------------------------------------------->
 
-#### Preview
+#### 📜 Preview
 
 [![Bundler Showcase 1]](#)
 
@@ -145,7 +145,7 @@ This will create a bundled file at `.build/Schema.xsd`
 
 <!----------------------------------------------------------------------------->
 
-## Workarounds
+## 🩹 Workarounds
 
 Due to the missing [**XSD 1.1 Support**][Support] in the RedHat  
 VSCode extension, multiple workarounds are being  
