@@ -1,4 +1,6 @@
 
+<div align = center >
+
 # Addon Manifest Schema
 
 This repository contains the source files for the XML  
@@ -8,6 +10,19 @@ Schema ( XSD ) used for the [FreeCAD Addon Manifest].
 
 ***The usage information is currently not functional as the***  
 ***endpoint for the hosted version hasn't been set up yet.***
+
+</div>
+
+<br/>
+
+<!----------------------------------------------------------------------------->
+
+## Showcase
+
+The schema not only provides validation, autocomplete  
+and examples but also tooltips, here is one of them.
+
+<img width = 500 src = './Assets/Images/Dependency-Greater-Than-Equal.webp' />
 
 <br/>
 
