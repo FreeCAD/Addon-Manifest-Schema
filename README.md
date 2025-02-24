@@ -67,7 +67,11 @@ In case you need to use an older version of the schema,
 you can reference one of the [GitHub Releases] like so:
 
 ```md
-https://github.com/FreeCAD/Addon-Manifest/releases/download/<Version>/Schema.xsd`
+https://github.com/FreeCAD/FreeCAD-Addon-Manifest-Schema/releases/download/<Version>/Schema.xsd
+```
+
+```md
+https://github.com/FreeCAD/FreeCAD-Addon-Manifest-Schema/releases/download/v1.0/Schema.xsd
 ```
 
 <br/>
