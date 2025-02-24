@@ -147,6 +147,20 @@ This will create a bundled file at `.build/Schema.xsd`
 
 <!----------------------------------------------------------------------------->
 
+## 📋 Versioning
+
+This schema uses semantic versioning with  
+2 numbers where the first is the manifest  
+format & the second is this schema's build.
+
+`<Manifest Format>.<Schema Build>`
+
+*The [Releases][GitHub Releases] page lists all published versions.*
+
+<br/>
+
+<!----------------------------------------------------------------------------->
+
 ## 🩹 Workarounds
 
 Due to the missing [**XSD 1.1 Support**][Support] in the RedHat  
