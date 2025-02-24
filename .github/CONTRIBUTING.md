@@ -9,13 +9,15 @@ Thank you for considering contributing to this schema.
 
 You can contribute in various ways, here are some of them.
 
+<br/>
+
 ### General
 
 -   More / improved examples
 
--   Improve documentation tags
+-   Improve tag documentation
 
--   Improve source file structure
+-   Improve schema structuring
 
 -   Repository documentation
 
