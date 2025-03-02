@@ -37,7 +37,6 @@ reference it in your `package.xml` file.
 
 ```xml
 <?xml-model
-    schematypens = 'HTTPS://FreeCAD.Org/Manifest'
     href = '<Schema Url>'
 ?>
 ```
@@ -54,7 +53,7 @@ Currently FreeCAD only supports one endpoint
 that hosts the **latest** version of the schema at:
 
 ```md
-https://FreeCAD.org/Manifest
+HTTPS://Addons.FreeCAD.Org/Manifest
 ```
 
 <br/>
@@ -90,8 +89,7 @@ reference this schema in your addon manifest:
     standalone = 'no'
 ?>
 <?xml-model
-    schematypens = 'HTTPS://FreeCAD.Org/Manifest'
-    href = 'https://FreeCAD.org/Manifest'
+    href = 'HTTPS://Addons.FreeCAD.Org/Manifest'
 ?>
 <package format = '1' >
     <!-- . . . -->
@@ -123,7 +121,6 @@ directly by referencing `Source/mod.xsd`.
 
 ```xml
 <?xml-model
-    schematypens = 'HTTPS://FreeCAD.Org/Manifest'
     href = '/Path-To-Cloned-Repository/Source/mod.xsd'
 ?>
 ```
@@ -142,6 +139,12 @@ python Scripts/Bundle.py
 ```
 
 This will create a bundled file at `.build/Schema.xsd`
+
+```xml
+<?xml-model
+    href = '/Path-To-Cloned-Repository/.build/Schema.xsd'
+?>
+```
 
 <!----------------------------------------------------------------------------->
 
