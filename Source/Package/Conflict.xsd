@@ -9,7 +9,10 @@
 
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 
-    <xs:element name = 'conflict' >
+    <xs:element
+        type = 'Required-Dependency'
+        name = 'conflict'
+    >
 
         <xs:annotation>
             <xs:documentation>

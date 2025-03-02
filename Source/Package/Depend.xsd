@@ -9,7 +9,10 @@
 
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 
-    <xs:element name = 'depend' >
+    <xs:element
+        type = 'Optional-Dependency'
+        name = 'depend'
+    >
 
         <xs:annotation>
             <xs:documentation>
@@ -34,12 +37,6 @@
 
             </xs:documentation>
         </xs:annotation>
-
-        <xs:complexType>
-            <xs:complexContent>
-                <xs:extension base = 'Dependency' />
-            </xs:complexContent>
-        </xs:complexType>
 
     </xs:element>
 

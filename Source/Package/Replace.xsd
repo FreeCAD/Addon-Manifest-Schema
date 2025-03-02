@@ -9,7 +9,10 @@
 
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 
-    <xs:element name = 'replace' >
+    <xs:element
+        type = 'Required-Dependency'
+        name = 'replace'
+    >
 
         <xs:annotation>
             <xs:documentation>

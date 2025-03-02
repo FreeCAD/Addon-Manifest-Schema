@@ -17,7 +17,7 @@
 
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 
-    <xs:complexType name = 'Dependency' >
+    <xs:complexType name = 'Required-Dependency' >
         <xs:simpleContent>
 
             <xs:extension base = 'Dependency-Name' >
@@ -48,12 +48,24 @@
                 />
 
                 <xs:attribute
-                    ref = 'optional'
+                    ref = 'type'
                     use = 'required'
                 />
 
+            </xs:extension>
+
+        </xs:simpleContent>
+    </xs:complexType>
+
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+    <xs:complexType name = 'Optional-Dependency' >
+        <xs:simpleContent>
+
+            <xs:extension base = 'Required-Dependency' >
+
                 <xs:attribute
-                    ref = 'type'
+                    ref = 'optional'
                     use = 'required'
                 />
 
