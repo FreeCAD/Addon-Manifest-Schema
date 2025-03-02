@@ -40,13 +40,15 @@ def resolveIncludes ( parent , base , depth = Max_Depth ):
 
         file = urljoin( base + sep , file )
 
-        if file in files :
+        relative = relpath(file,Source_Path)
+
+        if relative in files :
             parent.remove(element)
             continue
 
-        print( f'+ 📄 { relpath(file,Source_Path) }' )
+        print( f'+ 📄 { relative }' )
 
-        files.add(file)
+        files.add(relative)
 
         with open(file,'rb') as handle :
             node = parse(handle).getroot()
