@@ -77,7 +77,7 @@ https://github.com/FreeCAD/FreeCAD-Addon-Manifest-Schema/releases/download/v1.0/
 
 <!----------------------------------------------------------------------------->
 
-### 📄 Example
+### 📄 Integration
 
 The following code demonstrates how you can  
 reference this schema in your addon manifest:
@@ -95,6 +95,19 @@ reference this schema in your addon manifest:
     <!-- . . . -->
 </package>
 ```
+
+<br/>
+
+<!----------------------------------------------------------------------------->
+
+### 📖 Examples
+
+The following manifests demonstrate  
+different configurations you may use.
+
+| File | Contents |
+|:-----|:--------|
+| [`Everything.xml`] | Manifest with all available elements & attributes.
 
 <br/>
 
@@ -194,9 +207,10 @@ used to approximate the actual schema structure.
 
 [FreeCAD Addon Manifest]: https://wiki.freecad.org/Package_Metadata
 [GitHub Releases]: https://github.com/FreeCAD/FreeCAD-Addon-Manifest-Schema/releases
-[Contribute]: ./.github/CONTRIBUTING.md
 [Support]: https://github.com/redhat-developer/vscode-xml/issues/222
 [Discord]: https://discord.gg/w2cTKGzccC
 [Website]: https://freecad.org
 
 [Bundler Showcase 1]: ./Assets/Images/Bundler-Showcase-1.webp
+[`Everything.xml`]: ./Assets/Examples/Everything.xml
+[Contribute]: ./.github/CONTRIBUTING.md
