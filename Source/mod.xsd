@@ -3,6 +3,10 @@
     encoding = 'UTF-8'
 ?>
 
-<xs:schema xmlns:xs = 'http://www.w3.org/2001/XMLSchema' >
+<xs:schema
+    xmlns:xs = 'http://www.w3.org/2001/XMLSchema'
+    xml:lang = 'en'
+    version = '1.0'
+>
     <xs:include schemaLocation = './Package/mod.xsd' />
 </xs:schema>
