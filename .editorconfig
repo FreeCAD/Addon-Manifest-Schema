@@ -48,10 +48,15 @@
 root = true
 
 
-[*.{json,xml,xsd,yml,py}]
-trim_trailing_whitespace = true
+[*.{json,xml,xsd,yml,py,md}]
 insert_final_newline = false
 indent_style = space
 end_of_line = lf
 indent_size = 4
 charset = utf-8
+
+[*.{json,xml,xsd,yml,py}]
+trim_trailing_whitespace = true
+
+[*.{md}]
+trim_trailing_whitespace = false
