@@ -84,7 +84,7 @@ The following code demonstrates how you can
 reference this schema in your addon manifest:
 
 ```xml
-<?xml 
+<?xml
     version = '1.0'
     encoding = 'UTF-8'
     standalone = 'no'
@@ -108,6 +108,8 @@ reference this schema in your addon manifest:
 |:-------|:--------|
 | `Source`  | Tree of bite sized XSD source files.
 | `Scripts` | Python script used to create a bundle.
+| `Assets` | Examples & images used in the docs.
+| `.github`  | Configuration & information of the repo.
 | `.build`  | Output folder for the bundled schema.
 
 <br/>
@@ -176,7 +178,7 @@ used to approximate the actual schema structure.
     using `<choice>` and allowing multiple of every tags.
 
     The `<package>` tag uses the latter to facilitate `<maintainer>` & `<url>`
-    
+
 -   The `<url>` tag should require a `branch` attribute if the  
     `type` attribute was set to `repository`, however currently  
     the `branch` attribute will always be present & optional.
