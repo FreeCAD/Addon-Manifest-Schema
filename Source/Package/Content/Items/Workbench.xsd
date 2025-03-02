@@ -9,7 +9,6 @@
     <xs:include schemaLocation = '../ClassName.xsd' />
     <xs:include schemaLocation = '../../Name.xsd' />
     <xs:include schemaLocation = '../Icon.xsd' />
-    <xs:include schemaLocation = '../File.xsd' />
 
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 
@@ -49,11 +48,6 @@
                     <xs:element ref = 'classname' />
                     <xs:element ref = 'icon' />
                     <xs:element ref = 'name' />
-
-                    <xs:element
-                        maxOccurs = 'unbounded'
-                        ref = 'file'
-                    />
 
                 </xs:choice>
             </xs:sequence>
