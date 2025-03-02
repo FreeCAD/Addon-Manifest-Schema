@@ -5,6 +5,11 @@
 
 <xs:schema xmlns:xs = 'http://www.w3.org/2001/XMLSchema' >
 
+    <xs:include schemaLocation = './Branch.xsd' />
+    <xs:include schemaLocation = './Type.xsd' />
+
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
     <xs:element
         name = 'url'
     >
@@ -40,27 +45,13 @@
                 <xs:extension base = 'xs:anyURI' >
 
                     <xs:attribute
+                        type = 'Url-Type'
                         name = 'type'
                         use = 'required'
-                    >
-
-                        <xs:simpleType>
-                            <xs:restriction base = 'xs:string' >
-                                <xs:enumeration value = 'documentation' />
-                                <xs:enumeration value = 'bugtracker' />
-                                <xs:enumeration value = 'repository' />
-                                <xs:enumeration value = 'discussion' />
-                                <xs:enumeration value = 'website' />
-                                <xs:enumeration value = 'readme' />
-                            </xs:restriction>
-                        </xs:simpleType>
-
-                    </xs:attribute>
-
-                    <!-- Workaround for missing XSD 1.1 support in VSCode -->
+                    />
 
                     <xs:attribute
-                        type = 'xs:string'
+                        type = 'Url-Branch'
                         name = 'branch'
                         use = 'optional'
                     />

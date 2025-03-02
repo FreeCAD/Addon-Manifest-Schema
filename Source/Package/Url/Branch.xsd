@@ -1,0 +1,61 @@
+<?xml
+    version = '1.1'
+    encoding = 'UTF-8'
+?>
+
+<xs:schema xmlns:xs = 'http://www.w3.org/2001/XMLSchema' >
+
+    <xs:simpleType
+        name = 'Url-Branch'
+    >
+
+        <xs:annotation>
+            <xs:documentation>
+
+                <![CDATA[
+
+                    <h3>
+
+                        <a href = 'https://wiki.freecad.org/Package_Metadata#.3Curl.3E' >
+                            🛈 ⁣
+                        </a>
+
+                        Branch
+
+                    </h3>
+
+                    <hr>
+
+                    <p> Branch of the repository that should be linked to. </p>
+
+                ]]>
+
+            </xs:documentation>
+        </xs:annotation>
+
+        <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+        <xs:union>
+
+            <!-- Custom -->
+
+            <xs:simpleType>
+                <xs:restriction base = 'xs:string' />
+            </xs:simpleType>
+
+            <!-- Common -->
+
+            <xs:simpleType>
+                <xs:restriction base = 'xs:string' >
+                    <xs:enumeration value = 'Stable' />
+                    <xs:enumeration value = 'master' />
+                    <xs:enumeration value = 'main' />
+                    <xs:enumeration value = 'dev' />
+                </xs:restriction>
+            </xs:simpleType>
+
+        </xs:union>
+
+    </xs:simpleType>
+
+</xs:schema>

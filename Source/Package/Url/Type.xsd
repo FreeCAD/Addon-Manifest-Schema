@@ -1,0 +1,246 @@
+<?xml
+    version = '1.1'
+    encoding = 'UTF-8'
+?>
+
+<xs:schema xmlns:xs = 'http://www.w3.org/2001/XMLSchema' >
+
+    <xs:simpleType
+        name = 'Url-Type'
+    >
+
+        <xs:annotation>
+            <xs:documentation>
+
+                <![CDATA[
+
+                    <h3>
+
+                        <a href = 'https://wiki.freecad.org/Package_Metadata#Attributes_6' >
+                            🛈 ⁣
+                        </a>
+
+                        Type
+
+                    </h3>
+
+                    <hr>
+
+                    <p> Type of resource this link relates to. </p>
+
+                ]]>
+
+            </xs:documentation>
+        </xs:annotation>
+
+        <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+        <xs:restriction base = 'xs:string' >
+
+            <xs:enumeration value = 'documentation' >
+                <xs:annotation>
+                    <xs:documentation>
+
+                        <![CDATA[
+
+                            <h3>
+
+                                <a href = 'https://wiki.freecad.org/Package_Metadata#Attributes_6' >
+                                    🛈 ⁣
+                                </a>
+
+                                Documentation
+
+                            </h3>
+
+                            <hr>
+
+                            <p> Link to a documentation resource. </p>
+
+                            <h4> 💡 ⁣ Example </h4>
+
+                            <code lang = xml >
+                            &lt;url type = 'documentation' &gt;https://Docs.FreeCAD.Org&lt;/url&gt;
+                            </code>
+
+                        ]]>
+
+                    </xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+
+            <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+            <xs:enumeration value = 'bugtracker' >
+                <xs:annotation>
+                    <xs:documentation>
+
+                        <![CDATA[
+
+                            <h3>
+
+                                <a href = 'https://wiki.freecad.org/Package_Metadata#.3Curl.3E' >
+                                    🛈 ⁣
+                                </a>
+
+                                Bug Tracker
+
+                            </h3>
+
+                            <hr>
+
+                            <p> Link to an issue tracking page. </p>
+
+                            <h4> 💡 ⁣ Example </h4>
+
+                            <code lang = xml >
+                            &lt;url type = 'bugtracker' &gt;https://GitHub.Com/FreeCAD/SuperFEM/issues&lt;/url&gt;
+                            </code>
+
+                        ]]>
+
+                    </xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+
+            <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+            <xs:enumeration value = 'repository' >
+                <xs:annotation>
+                    <xs:documentation>
+
+                        <![CDATA[
+
+                            <h3>
+
+                                <a href = 'https://wiki.freecad.org/Package_Metadata#.3Curl.3E' >
+                                    🛈 ⁣
+                                </a>
+
+                                Repository
+
+                            </h3>
+
+                            <hr>
+
+                            <p> Link to the repository the addon resides in. </p>
+
+                            <h4> 💡 ⁣ Example </h4>
+
+                            <code lang = xml >
+                            &lt;url type = 'repository' &gt;https://GitHub.Com/FreeCAD/SuperFEM&lt;/url&gt;
+                            </code>
+
+                        ]]>
+
+                    </xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+
+            <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+            <xs:enumeration value = 'discussion' >
+                <xs:annotation>
+                    <xs:documentation>
+
+                        <![CDATA[
+
+                            <h3>
+
+                                <a href = 'https://wiki.freecad.org/Package_Metadata#.3Curl.3E' >
+                                    🛈 ⁣
+                                </a>
+
+                                Website
+
+                            </h3>
+
+                            <hr>
+
+                            <p> Link to a page where the addon can be discussed. </p>
+
+                            <h4> 💡 ⁣ Example </h4>
+
+                            <code lang = xml >
+                            &lt;url type = 'discussion' &gt;https://Discord.gg/w2cTKGzccC&lt;/url&gt;
+                            </code>
+
+                        ]]>
+
+                    </xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+
+            <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+            <xs:enumeration value = 'website' >
+                <xs:annotation>
+                    <xs:documentation>
+
+                        <![CDATA[
+
+                            <h3>
+
+                                <a href = 'https://wiki.freecad.org/Package_Metadata#.3Curl.3E' >
+                                    🛈 ⁣
+                                </a>
+
+                                Website
+
+                            </h3>
+
+                            <hr>
+
+                            <p> Link to the website for the addon's project page. </p>
+
+                            <h4> 💡 ⁣ Example </h4>
+
+                            <code lang = xml >
+                            &lt;url type = 'website' &gt;https://FreeCAD.Org&lt;/url&gt;
+                            </code>
+
+                        ]]>
+
+                    </xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+
+            <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+            <xs:enumeration value = 'readme' >
+                <xs:annotation>
+                    <xs:documentation>
+
+                        <![CDATA[
+
+                            <h3>
+
+                                <a href = 'https://wiki.freecad.org/Package_Metadata#.3Curl.3E' >
+                                    🛈 ⁣
+                                </a>
+
+                                ReadMe
+
+                            </h3>
+
+                            <hr>
+
+                            <p> Link to the markdown overview file shown in the addon manager. </p>
+
+                            <h4> 💡 ⁣ Example </h4>
+
+                            <code lang = xml >
+                            &lt;url type = 'readme' &gt;https://GitHub.Com/FreeCAD/SuperFEM/blob/main/Resources/Addon.md&lt;/url&gt;
+                            </code>
+
+                        ]]>
+
+                    </xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+
+        </xs:restriction>
+
+    </xs:simpleType>
+
+</xs:schema>
