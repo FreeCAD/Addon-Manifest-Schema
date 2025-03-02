@@ -1,0 +1,131 @@
+<?xml
+    version = '1.0'
+    encoding = 'UTF-8'
+    standalone = 'no'
+?>
+<?xml-model
+    href = '../../Source/mod.xsd'
+?>
+<package
+    format = '1'
+>
+
+    <description>Package manifest with every attribute and element.</description>
+    <icon>Resources/Icons/Addon.webp</icon>
+    <name>Everything</name>
+
+    <version>1.2.3-Alpha</version>
+    <date>1605-11-05</date>
+
+    <maintainer
+        email = 'John@Example.com'
+    >John</maintainer>
+
+    <maintainer
+        email = 'Jane@Example.com'
+    >Jane</maintainer>
+
+    <author
+        email = 'Jane@Example.com'
+    >Jane</author>
+
+    <author
+        email = 'John@Example.com'
+    >John</author>
+
+    <license file = 'LICENSE' >AGPL-3.0-or-later</license>
+
+    <freecadmin>0.21.2</freecadmin>
+    <freecadmax>1.0.0</freecadmax>
+    <pythonmin>3.8.0</pythonmin>
+
+    <url
+        branch = 'master'
+        type = 'repository'
+    >https://GitHub.com/FreeCAD/SuperFEM</url>
+
+    <url
+        type = 'documentation'
+    >https://FreeCAD.GitHub.com/SuperFEM</url>
+
+    <url
+        type = 'bugtracker'
+    >https://GitHub.com/FreeCAD/SuperFEM/issues</url>
+
+    <url
+        type = 'discussion'
+    >https://discord.gg/w2cTKGzccC</url>
+
+    <url
+        type = 'website'
+    >https://www.FreeCAD.Org/</url>
+
+    <url
+        type = 'readme'
+    >https://GitHub.com/FreeCAD/SuperFEM/blob/main/README.md</url>
+
+    <tag>YAML</tag>
+    <tag>FEM</tag>
+
+    <depend
+        optional = 'true'
+        type = 'internal'
+    >fem</depend>
+
+    <depend
+        version_gte = '24.1.0'
+        optional = 'false'
+        type = 'python'
+    >aiofiles</depend>
+
+    <depend
+        version_eq = '0.50.7'
+        optional = 'false'
+        type = 'addon'
+    >Zolko-123/FreeCAD_Assembly4</depend>
+
+    <conflict
+        version_lt = '0.2.0'
+        type = 'addon'
+    >FrontISTR/FEM_FrontISTR</conflict>
+
+    <replace
+        type = 'addon'
+    >Serince/FEMbyGEN</replace>
+
+    <content>
+
+        <!--
+            For demonstration purposes this <content> element
+            contains multiple items, however this practice is
+            discouraged and won't validate against the schema.
+        -->
+
+        <preferencepack>
+            <subdirectory>./Source/Pack/</subdirectory>
+            <file>Pack.qss</file>
+            <name>Pack</name>
+        </preferencepack>
+
+        <workbench>
+            <subdirectory>./Source/Workbench/</subdirectory>
+            <classname>Workbench</classname>
+            <icon>Icon.svg</icon>
+            <name>Workbench</name>
+        </workbench>
+
+        <macro>
+            <subdirectory>./Source/Macros/</subdirectory>
+            <file>Import.FCMacro</file>
+            <name>Import Macro</name>
+        </macro>
+
+        <macro>
+            <subdirectory>./Source/Macros/</subdirectory>
+            <file>Export.FCMacro</file>
+            <name>Export Macro</name>
+        </macro>
+
+    </content>
+
+</package>
