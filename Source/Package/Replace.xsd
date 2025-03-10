@@ -7,7 +7,7 @@
 
     <xs:include schemaLocation = '../Helper/Dependency/mod.xsd' />
 
-    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 
     <xs:element
         type = 'Required-Dependency'

@@ -38,7 +38,7 @@
             </xs:documentation>
         </xs:annotation>
 
-        <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+        <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 
         <xs:complexType>
             <xs:simpleContent>
