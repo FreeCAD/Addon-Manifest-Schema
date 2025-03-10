@@ -7,6 +7,32 @@
 
     <xs:simpleType name = 'Manifest-Version' >
 
+        <xs:annotation>
+            <xs:documentation>
+
+                <![CDATA[
+
+                    <h3>
+
+                        <a href = 'https://wiki.freecad.org/Package_Metadata#Attributes' >
+                            🛈 ⁣
+                        </a>
+
+                        Email
+
+                    </h3>
+
+                    <hr>
+
+                    <p> Version of the format used in this manifest. </p>
+
+                ]]>
+
+            </xs:documentation>
+        </xs:annotation>
+
+        <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
         <xs:restriction base = 'xs:integer'>
             <xs:enumeration value = '1' />
         </xs:restriction>

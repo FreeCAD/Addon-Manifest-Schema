@@ -115,19 +115,7 @@
                 type = 'Manifest-Version'
                 name = 'format'
                 use = 'required'
-            >
-
-                <xs:annotation>
-                    <xs:documentation>
-
-                        [🛈](https://wiki.freecad.org/Package_Metadata#Attributes)
-
-                        Version of the format used in this manifest.
-
-                    </xs:documentation>
-                </xs:annotation>
-
-            </xs:attribute>
+            />
 
         </xs:complexType>
 
