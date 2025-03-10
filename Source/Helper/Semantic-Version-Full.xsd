@@ -1,0 +1,21 @@
+<?xml
+    version = '1.0'
+    encoding = 'UTF-8'
+?>
+
+<xs:schema xmlns:xs = 'http://www.w3.org/2001/XMLSchema' >
+
+    <xs:simpleType name = 'Semantic-Version-Full' >
+
+        <!--
+            Abbreviated version from:
+            https://semver.org/#is-there-a-suggested-regular-expression-regex-to-check-a-semver-string
+        -->
+
+        <xs:restriction base = 'xs:string'>
+            <xs:pattern value = '(0|[1-9]\d*)\.(0|[1-9]\d*)\.(0|[1-9]\d*)(-((0|[1-9]\d*|\d*[a-zA-Z-][0-9a-zA-Z-]*)(\.(0|[1-9]\d*|\d*[a-zA-Z-][0-9a-zA-Z-]*))*))?(\+([0-9a-zA-Z-]+(\.[0-9a-zA-Z-]+)*))?' />
+        </xs:restriction>
+
+    </xs:simpleType>
+
+</xs:schema>
