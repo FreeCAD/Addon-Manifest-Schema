@@ -8,12 +8,12 @@
     <xs:include schemaLocation = './Python-Package.xsd' />
     <xs:include schemaLocation = './Internal-Mod.xsd' />
 
-    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 
     <xs:simpleType name = 'Dependency-Name' >
         <xs:union>
 
-            <!-- Custom -->
+            <!-- Community Addon -->
 
             <xs:simpleType>
                 <xs:restriction base = 'xs:string' >
@@ -21,13 +21,13 @@
                 </xs:restriction>
             </xs:simpleType>
 
-            <!-- Python -->
+            <!-- Python Package -->
 
             <xs:simpleType>
                 <xs:restriction base = 'Python-Package' />
             </xs:simpleType>
 
-            <!-- Internal -->
+            <!-- Internal Mod -->
 
             <xs:simpleType>
                 <xs:restriction base = 'Internal-Mod' />

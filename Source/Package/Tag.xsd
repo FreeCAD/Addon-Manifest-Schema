@@ -35,7 +35,13 @@
         <xs:simpleType>
             <xs:union>
 
-                <!-- Example -->
+                <!-- General -->
+
+                <xs:simpleType>
+                    <xs:restriction base = 'xs:string' />
+                </xs:simpleType>
+
+                <!-- Examples -->
 
                 <xs:simpleType>
                     <xs:restriction base = 'xs:string' >
@@ -85,12 +91,6 @@
                         <xs:enumeration value = 'BuiltIn' />
 
                     </xs:restriction>
-                </xs:simpleType>
-
-                <!-- General -->
-
-                <xs:simpleType>
-                    <xs:restriction base = 'xs:string' />
                 </xs:simpleType>
 
             </xs:union>

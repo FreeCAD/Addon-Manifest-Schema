@@ -35,19 +35,19 @@
 
         <xs:union>
 
-            <!-- Example -->
-
-            <xs:simpleType>
-                <xs:restriction base = 'xs:string' >
-                    <xs:enumeration value = 'User@Example.com' />
-                </xs:restriction>
-            </xs:simpleType>
-
             <!-- General -->
 
             <xs:simpleType>
                 <xs:restriction base = 'xs:string'>
                     <xs:pattern value = '[^@]*@[^\.]+\..+' />
+                </xs:restriction>
+            </xs:simpleType>
+
+            <!-- Examples -->
+
+            <xs:simpleType>
+                <xs:restriction base = 'xs:string' >
+                    <xs:enumeration value = 'User@Example.com' />
                 </xs:restriction>
             </xs:simpleType>
 

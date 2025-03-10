@@ -37,13 +37,13 @@
 
         <xs:union>
 
-            <!-- Custom -->
+            <!-- General -->
 
             <xs:simpleType>
                 <xs:restriction base = 'xs:string' />
             </xs:simpleType>
 
-            <!-- Common -->
+            <!-- Examples -->
 
             <xs:simpleType>
                 <xs:restriction base = 'xs:string' >

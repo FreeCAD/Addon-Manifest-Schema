@@ -8,21 +8,21 @@
     <xs:simpleType name = 'Semantic-Version-Basic' >
         <xs:union>
 
-            <!-- Example -->
+            <!-- General -->
+
+            <xs:simpleType>
+                <xs:restriction base = 'xs:string'>
+                    <xs:pattern value = '(0|[1-9]\d*)\.(0|[1-9]\d*)\.(0|[1-9]\d*)' />
+                </xs:restriction>
+            </xs:simpleType>
+
+            <!-- Examples -->
 
             <xs:simpleType>
                 <xs:restriction base = 'xs:string' >
                     <xs:enumeration value = '0.1.0' />
                     <xs:enumeration value = '5.10.1' />
                     <xs:enumeration value = '1.4.152' />
-                </xs:restriction>
-            </xs:simpleType>
-
-            <!-- General -->
-
-            <xs:simpleType>
-                <xs:restriction base = 'xs:string'>
-                    <xs:pattern value = '(0|[1-9]\d*)\.(0|[1-9]\d*)\.(0|[1-9]\d*)' />
                 </xs:restriction>
             </xs:simpleType>
 
