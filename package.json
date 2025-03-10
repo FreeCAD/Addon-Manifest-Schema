@@ -1,0 +1,7 @@
+{
+    "scripts" : {
+        "endpoint" : "clear && bun run Scripts/Endpoint.js" ,
+        "tunnel" : "ngrok http --subdomain=$1 --region=us http://localhost:3000" ,
+        "bundle" : "clear && python Scripts/Bundle.py"
+    }
+}

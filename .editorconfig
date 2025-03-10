@@ -48,7 +48,7 @@
 root = true
 
 
-[*.{json,xml,xsd,yml,py,md}]
+[*.{json,xml,xsd,yml,py,js,md}]
 insert_final_newline = false
 indent_style = space
 end_of_line = lf

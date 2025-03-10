@@ -143,6 +143,8 @@ def main ():
 
         resolveIncludeTree(tree)
 
+        tree.getroot().set('xmlns','HTTPS://Addons.FreeCAD.Org/Manifest')
+
         writeSchema(tree,Output_Path)
 
         print( f'Done.' )

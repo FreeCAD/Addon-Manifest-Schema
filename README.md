@@ -41,8 +41,6 @@ reference it in your `package.xml` file.
 ?>
 ```
 
-*This replaces the `xmlns` attribute on `<package>`*
-
 <br/>
 
 <!----------------------------------------------------------------------------->
@@ -53,7 +51,7 @@ Currently FreeCAD only supports one endpoint
 that hosts the **latest** version of the schema at:
 
 ```md
-HTTPS://Addons.FreeCAD.Org/Manifest
+https://Addons.FreeCAD.Org/Manifest.xsd
 ```
 
 <br/>
@@ -89,9 +87,11 @@ reference this schema in your addon manifest:
     standalone = 'no'
 ?>
 <?xml-model
-    href = 'HTTPS://Addons.FreeCAD.Org/Manifest'
+    href = 'https://Addons.FreeCAD.Org/Manifest.xsd'
 ?>
-<package format = '1' >
+<package 
+    xmlns = 'HTTPS://Addons.FreeCAD.Org/Manifest'
+>
     <!-- . . . -->
 </package>
 ```

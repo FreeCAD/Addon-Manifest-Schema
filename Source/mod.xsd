@@ -4,8 +4,13 @@
 ?>
 
 <xs:schema
+
+    targetNamespace = 'HTTPS://Addons.FreeCAD.Org/Manifest'
+
     xmlns:xs = 'http://www.w3.org/2001/XMLSchema'
-    xml:lang = 'en'
+    xmlns = 'HTTPS://Addons.FreeCAD.Org/Manifest'
+
+    xml:lang = 'EN'
     version = '1.1'
 >
     <xs:include schemaLocation = './Package/mod.xsd' />
