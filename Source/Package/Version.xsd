@@ -5,8 +5,8 @@
 
 <xs:schema xmlns:xs = 'http://www.w3.org/2001/XMLSchema' >
 
-    <xs:include schemaLocation = '../Helper/Semantic-Version-Full.xsd' />
-    <xs:include schemaLocation = '../Helper/Calender-Version.xsd' />
+    <xs:include schemaLocation = '../Helper/Version/Semantic-Full.xsd' />
+    <xs:include schemaLocation = '../Helper/Version/Calender.xsd' />
 
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 
@@ -46,7 +46,7 @@
         <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 
         <xs:simpleType>
-            <xs:union memberTypes = 'Semantic-Version-Full Calender-Version' />
+            <xs:union memberTypes = 'Version-Semantic-Full Version-Calender' />
         </xs:simpleType>
 
     </xs:element>

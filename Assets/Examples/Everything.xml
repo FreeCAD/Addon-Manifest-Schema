@@ -4,7 +4,7 @@
     standalone = 'no'
 ?>
 <?xml-model
-    href = 'https://Addons.Freecad.org/Manifest.xsd'
+    href = 'https://Addons.FreeCAD.Org/Manifest.xsd'
 ?>
 <package
     xmlns = 'HTTPS://Addons.FreeCAD.Org/Manifest'

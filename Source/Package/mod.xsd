@@ -5,7 +5,7 @@
 
 <xs:schema xmlns:xs = 'http://www.w3.org/2001/XMLSchema' >
 
-    <xs:include schemaLocation = '../Helper/Manifest-Version.xsd' />
+    <xs:include schemaLocation = '../Helper/Version/Manifest.xsd' />
     <xs:include schemaLocation = './FreeCAD-Minimum.xsd' />
     <xs:include schemaLocation = './FreeCAD-Maximum.xsd' />
     <xs:include schemaLocation = './Python-Minimum.xsd' />
@@ -112,7 +112,7 @@
             <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 
             <xs:attribute
-                type = 'Manifest-Version'
+                type = 'Version-Manifest'
                 name = 'format'
                 use = 'required'
             />

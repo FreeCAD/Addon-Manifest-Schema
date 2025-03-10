@@ -5,7 +5,7 @@
 
 <xs:schema xmlns:xs = 'http://www.w3.org/2001/XMLSchema' >
 
-    <xs:simpleType name = 'Manifest-Version' >
+    <xs:simpleType name = 'Version-Manifest' >
 
         <xs:annotation>
             <xs:documentation>
