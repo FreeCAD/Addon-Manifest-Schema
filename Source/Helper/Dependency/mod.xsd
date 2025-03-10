@@ -23,32 +23,38 @@
             <xs:extension base = 'Dependency-Name' >
 
                 <xs:attribute
-                    ref = 'version_lt'
+                    type = 'Version-Less'
+                    name = 'version_lt'
                     use = 'optional'
                 />
 
                 <xs:attribute
-                    ref = 'version_lte'
+                    type = 'Version-Less-Equal'
+                    name = 'version_lte'
                     use = 'optional'
                 />
 
                 <xs:attribute
-                    ref = 'version_eq'
+                    type = 'Version-Equal'
+                    name = 'version_eq'
                     use = 'optional'
                 />
 
                 <xs:attribute
-                    ref = 'version_gt'
+                    type = 'Version-Greater'
+                    name = 'version_gt'
                     use = 'optional'
                 />
 
                 <xs:attribute
-                    ref = 'version_gte'
+                    type = 'Version-Greater-Equal'
+                    name = 'version_gte'
                     use = 'optional'
                 />
 
                 <xs:attribute
-                    ref = 'type'
+                    type = 'Dependency-Type'
+                    name = 'type'
                     use = 'required'
                 />
 
@@ -65,7 +71,8 @@
             <xs:extension base = 'Required-Dependency' >
 
                 <xs:attribute
-                    ref = 'optional'
+                    type = 'Dependency-Optional'
+                    name = 'optional'
                     use = 'required'
                 />
 

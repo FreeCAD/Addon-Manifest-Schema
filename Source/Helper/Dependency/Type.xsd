@@ -5,8 +5,8 @@
 
 <xs:schema xmlns:xs = 'http://www.w3.org/2001/XMLSchema' >
 
-    <xs:attribute
-        name = 'type'
+    <xs:simpleType
+        name = 'Dependency-Type'
     >
 
         <xs:annotation>
@@ -33,14 +33,15 @@
             </xs:documentation>
         </xs:annotation>
 
-        <xs:simpleType>
-            <xs:restriction base = 'xs:string' >
-                <xs:enumeration value = 'internal' />
-                <xs:enumeration value = 'python' />
-                <xs:enumeration value = 'addon' />
-            </xs:restriction>
-        </xs:simpleType>
+        <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 
-    </xs:attribute>
+
+        <xs:restriction base = 'xs:string' >
+            <xs:enumeration value = 'internal' />
+            <xs:enumeration value = 'python' />
+            <xs:enumeration value = 'addon' />
+        </xs:restriction>
+
+    </xs:simpleType>
 
 </xs:schema>

@@ -9,9 +9,8 @@
 
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 
-    <xs:attribute
-        type = 'Semantic-Version-Basic'
-        name = 'version_gte'
+    <xs:simpleType
+        name = 'Version-Greater-Equal'
     >
 
         <xs:annotation>
@@ -44,6 +43,10 @@
             </xs:documentation>
         </xs:annotation>
 
-    </xs:attribute>
+        <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+        <xs:restriction base = 'Semantic-Version-Basic' />
+
+    </xs:simpleType>
 
 </xs:schema>
