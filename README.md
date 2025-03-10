@@ -10,9 +10,6 @@ Schema ( XSD ) used for the [FreeCAD Addon Manifest].
 [![Button Website]][Website]  
 [![Button Contribute]][Contribute]
 
-***The usage information is currently not functional as the***  
-***endpoint for the hosted version hasn't been set up yet.***
-
 </div>
 
 <br/>
