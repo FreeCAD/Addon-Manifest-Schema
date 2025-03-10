@@ -5,7 +5,7 @@
 
 <xs:schema xmlns:xs = 'http://www.w3.org/2001/XMLSchema' >
 
-    <xs:include schemaLocation = '../Helper/Types.xsd' />
+    <xs:include schemaLocation = '../Helper/Semantic-Version-Basic.xsd' />
 
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 
@@ -44,7 +44,7 @@
         <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 
         <xs:simpleType>
-            <xs:restriction base = 'Basic-Semantic-Version' />
+            <xs:restriction base = 'Semantic-Version-Basic' />
         </xs:simpleType>
 
     </xs:element>

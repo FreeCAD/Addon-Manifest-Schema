@@ -5,12 +5,12 @@
 
 <xs:schema xmlns:xs = 'http://www.w3.org/2001/XMLSchema' >
 
-    <xs:include schemaLocation = '../Types.xsd' />
+    <xs:include schemaLocation = '../Semantic-Version-Basic.xsd' />
 
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 
     <xs:attribute
-        type = 'Basic-Semantic-Version'
+        type = 'Semantic-Version-Basic'
         name = 'version_eq'
     >
 

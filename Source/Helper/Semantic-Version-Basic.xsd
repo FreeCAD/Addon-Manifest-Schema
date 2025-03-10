@@ -5,7 +5,7 @@
 
 <xs:schema xmlns:xs = 'http://www.w3.org/2001/XMLSchema' >
 
-    <xs:simpleType name = 'Basic-Semantic-Version' >
+    <xs:simpleType name = 'Semantic-Version-Basic' >
         <xs:union>
 
             <!-- Example -->
