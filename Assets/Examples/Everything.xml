@@ -3,11 +3,12 @@
     encoding = 'UTF-8'
     standalone = 'no'
 ?>
-<?xml-model
-    href = 'https://Addons.FreeCAD.Org/Manifest.xsd'
-?>
 <package
+
+    Manifest:schemaLocation = 'HTTPS://Addons.FreeCAD.Org/Manifest https://Addons.FreeCAD.Org/Manifest.xsd'
+    xmlns:Manifest = 'http://www.w3.org/2001/XMLSchema-instance'
     xmlns = 'HTTPS://Addons.FreeCAD.Org/Manifest'
+
     format = '1'
 >
 

@@ -29,13 +29,15 @@ and examples but also tooltips, here is one of them.
 
 ## 💬 Usage
 
-To use this schema, you simply have to  
-reference it in your `package.xml` file.
+Use the following snippet to reference  
+this schema in your `<package>` tag.
 
 ```xml
-<?xml-model
-    href = '<Schema Url>'
-?>
+<package
+    Manifest:schemaLocation = 'HTTPS://Addons.FreeCAD.Org/Manifest https://Addons.FreeCAD.Org/Manifest'
+    xmlns:Manifest = 'http://www.w3.org/2001/XMLSchema-instance'
+    xmlns = 'HTTPS://Addons.FreeCAD.Org/Manifest'
+>
 ```
 
 <br/>
@@ -83,14 +85,11 @@ reference this schema in your addon manifest:
     encoding = 'UTF-8'
     standalone = 'no'
 ?>
-<?xml-model
-    href = 'https://Addons.FreeCAD.Org/Manifest.xsd'
-?>
-<package 
+<package
+    Manifest:schemaLocation = 'HTTPS://Addons.FreeCAD.Org/Manifest https://Addons.FreeCAD.Org/Manifest'
+    xmlns:Manifest = 'http://www.w3.org/2001/XMLSchema-instance'
     xmlns = 'HTTPS://Addons.FreeCAD.Org/Manifest'
 >
-    <!-- . . . -->
-</package>
 ```
 
 <br/>
@@ -133,6 +132,9 @@ directly by referencing `Source/mod.xsd`.
 <?xml-model
     href = '/Path-To-Cloned-Repository/Source/mod.xsd'
 ?>
+<package
+    xmlns = 'HTTPS://Addons.FreeCAD.Org/Manifest'
+>
 ```
 
 <br/>
@@ -154,6 +156,9 @@ This will create a bundled file at `.build/Schema.xsd`
 <?xml-model
     href = '/Path-To-Cloned-Repository/.build/Schema.xsd'
 ?>
+<package
+    xmlns = 'HTTPS://Addons.FreeCAD.Org/Manifest'
+>
 ```
 
 <!----------------------------------------------------------------------------->
