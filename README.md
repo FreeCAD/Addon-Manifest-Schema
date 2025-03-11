@@ -3,8 +3,10 @@
 
 # Addon Manifest Schema
 
-This repository contains the source files for the XML  
-Schema ( XSD ) used for the [FreeCAD Addon Manifest].
+Home of the source files for the schema  
+used to validate [FreeCAD Addon Manifests]
+
+<br/>
 
 [![Button Discord]][Discord]  
 [![Button Documentation]][Documentation]  
@@ -110,7 +112,7 @@ reference this schema in your addon manifest:
 [Button Contribute]: https://img.shields.io/badge/Contribute-24582e?style=for-the-badge
 [Button Discord]: https://img.shields.io/badge/Discord-5561EC?style=for-the-badge
 
-[FreeCAD Addon Manifest]: https://wiki.freecad.org/Package_Metadata
+[FreeCAD Addon Manifests]: https://wiki.freecad.org/Package_Metadata
 [GitHub Releases]: https://github.com/FreeCAD/FreeCAD-Addon-Manifest-Schema/releases
 [Discord]: https://discord.gg/w2cTKGzccC
 
