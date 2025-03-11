@@ -7,7 +7,7 @@ This repository contains the source files for the XML
 Schema ( XSD ) used for the [FreeCAD Addon Manifest].
 
 [![Button Discord]][Discord]  
-[![Button Website]][Website]  
+[![Button Documentation]][Documentation]  
 [![Button Contribute]][Contribute]
 
 </div>
@@ -109,110 +109,14 @@ different configurations you may use.
 
 <!----------------------------------------------------------------------------->
 
-## 📑 Repository
-
-| Folder | Purpose |
-|:-------|:--------|
-| `Source`  | Tree of bite sized XSD source files.
-| `Scripts` | Python script used to create a bundle.
-| `Assets` | Examples & images used in the docs.
-| `.github`  | Configuration & information of the repo.
-| `.build`  | Output folder for the bundled schema.
-
-<br/>
-
-<!----------------------------------------------------------------------------->
-
-## 🔧 Development
-
-The source files of the schema can be used  
-directly by referencing `Source/mod.xsd`.
-
-```xml
-<?xml-model
-    href = '/Path-To-Cloned-Repository/Source/mod.xsd'
-?>
-<package
-    xmlns = 'HTTPS://Addons.FreeCAD.Org/Manifest'
->
-```
-
-<br/>
-
-<!----------------------------------------------------------------------------->
-
-### 📦 Bundling
-
-To bundle the `/Source/` files into a combined schema,  
-you just have to run the following Python command:
-
-```sh
-python Scripts/Bundle.py
-```
-
-This will create a bundled file at `.build/Schema.xsd`
-
-```xml
-<?xml-model
-    href = '/Path-To-Cloned-Repository/.build/Schema.xsd'
-?>
-<package
-    xmlns = 'HTTPS://Addons.FreeCAD.Org/Manifest'
->
-```
-
-<!----------------------------------------------------------------------------->
-
-#### 📜 Preview
-
-[![Bundler Showcase 1]](#)
-
-<br/>
-
-<!----------------------------------------------------------------------------->
-
-## 📋 Versioning
-
-This schema uses semantic versioning with  
-2 numbers where the first is the manifest  
-format & the second is this schema's build.
-
-`<Manifest Format>.<Schema Build>`
-
-*The [Releases][GitHub Releases] page lists all published versions.*
-
-<br/>
-
-<!----------------------------------------------------------------------------->
-
-## 🚧 Workarounds
-
-Due to the missing [**XSD 1.1 Support**][Support] in the RedHat  
-VSCode extension, multiple workarounds are being  
-used to approximate the actual schema structure.
-
--   In XSD 1.1, the `<all>` tag allows for `unbound` elements, the two possible  
-    workarounds are using a `sequence` and forcing the order of elements or  
-    using `<choice>` and allowing multiple of every tags.
-
-    The `<package>` tag uses the latter to facilitate `<maintainer>` & `<url>`
-
--   The `<url>` tag should require a `branch` attribute if the  
-    `type` attribute was set to `repository`, however currently  
-    the `branch` attribute will always be present & optional.
-
-<!----------------------------------------------------------------------------->
-
-[Button Contribute]: https://img.shields.io/badge/Contribute-3D8DDF?style=for-the-badge
+[Button Documentation]: https://img.shields.io/badge/Documentation-4793CC?style=for-the-badge
+[Button Contribute]: https://img.shields.io/badge/Contribute-24582e?style=for-the-badge
 [Button Discord]: https://img.shields.io/badge/Discord-5561EC?style=for-the-badge
-[Button Website]: https://img.shields.io/badge/Website-E24329?style=for-the-badge
 
 [FreeCAD Addon Manifest]: https://wiki.freecad.org/Package_Metadata
 [GitHub Releases]: https://github.com/FreeCAD/FreeCAD-Addon-Manifest-Schema/releases
-[Support]: https://github.com/redhat-developer/vscode-xml/issues/222
 [Discord]: https://discord.gg/w2cTKGzccC
-[Website]: https://freecad.org
 
-[Bundler Showcase 1]: ./Assets/Images/Bundler-Showcase-1.webp
 [`Everything.xml`]: ./Assets/Examples/Everything.xml
+[Documentation]: ./Docs/README.md
 [Contribute]: ./.github/CONTRIBUTING.md
