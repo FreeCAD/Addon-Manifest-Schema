@@ -3,7 +3,7 @@
 
 <br/>
 
-## 🔧 Development
+# 🔧 Development
 
 The source files of the schema can be used  
 directly by referencing `Source/mod.xsd`.
@@ -21,7 +21,7 @@ directly by referencing `Source/mod.xsd`.
 
 <!----------------------------------------------------------------------------->
 
-### 📦 Bundling
+## 📦 Bundling
 
 To bundle the `/Source/` files into a combined schema,  
 you just have to run the following Python command:
@@ -43,7 +43,7 @@ This will create a bundled file at `.build/Schema.xsd`
 
 <!----------------------------------------------------------------------------->
 
-#### 📜 Preview
+### 📜 Preview
 
 [![Bundler Showcase 1]](#)
 

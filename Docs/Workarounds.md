@@ -3,7 +3,7 @@
 
 <br/>
 
-## 🚧 Workarounds
+# 🚧 Workarounds
 
 Due to the missing [**XSD 1.1 Support**][Support] in the RedHat  
 VSCode extension, multiple workarounds are being  

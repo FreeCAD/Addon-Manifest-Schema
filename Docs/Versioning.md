@@ -3,7 +3,7 @@
 
 <br/>
 
-## 📋 Versioning
+# 📋 Versioning
 
 This schema uses semantic versioning with  
 2 numbers where the first is the manifest  
