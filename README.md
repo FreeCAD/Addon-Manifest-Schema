@@ -50,7 +50,7 @@ Currently FreeCAD only supports one endpoint
 that hosts the **latest** version of the schema at:
 
 ```md
-https://Addons.FreeCAD.Org/Manifest.xsd
+https://Addons.FreeCAD.Org/Manifest
 ```
 
 <br/>
