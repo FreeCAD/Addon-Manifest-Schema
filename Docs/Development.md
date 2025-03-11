@@ -32,15 +32,6 @@ python Scripts/Bundle.py
 
 This will create a bundled file at `.build/Schema.xsd`
 
-```xml
-<?xml-model
-    href = '/Path-To-Cloned-Repository/.build/Schema.xsd'
-?>
-<package
-    xmlns = 'HTTPS://Addons.FreeCAD.Org/Manifest'
->
-```
-
 <!----------------------------------------------------------------------------->
 
 ### 📜 Preview
