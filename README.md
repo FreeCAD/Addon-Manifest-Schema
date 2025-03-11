@@ -16,12 +16,12 @@ Schema ( XSD ) used for the [FreeCAD Addon Manifest].
 
 <!----------------------------------------------------------------------------->
 
-## 📷 Showcase
+## ✨ Features
 
-The schema not only provides validation, autocomplete  
-and examples but also tooltips, here is one of them.
+<kbd> Validation </kbd>  <kbd> Autocomplete </kbd>  <kbd> Examples </kbd>  <kbd> Tooltips </kbd>
 
-<img width = 500 src = './Assets/Images/Dependency-Greater-Than-Equal.webp' />
+<img width = 250 src = './Assets/Images/Dependency-Greater-Than-Equal.webp' />
+<img width = 250 src = './Assets/Images/Autocomplete.webp' />
 
 <br/>
 
@@ -97,9 +97,6 @@ reference this schema in your addon manifest:
 <!----------------------------------------------------------------------------->
 
 ### 📖 Examples
-
-The following manifests demonstrate  
-different configurations you may use.
 
 | File | Contents |
 |:-----|:--------|
