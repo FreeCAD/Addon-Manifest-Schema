@@ -6,7 +6,7 @@
 <xs:schema xmlns:xs = 'http://www.w3.org/2001/XMLSchema' >
 
     <xs:include schemaLocation = './Python-Package.xsd' />
-    <xs:include schemaLocation = './Internal-Mod.xsd' />
+    <xs:include schemaLocation = './Internal/mod.xsd' />
 
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 
@@ -30,7 +30,7 @@
             <!-- Internal Mod -->
 
             <xs:simpleType>
-                <xs:restriction base = 'Internal-Mod' />
+                <xs:restriction base = 'Internal' />
             </xs:simpleType>
 
         </xs:union>

@@ -1,0 +1,50 @@
+<?xml
+    version = '1.0'
+    encoding = 'UTF-8'
+?>
+
+<xs:schema xmlns:xs = 'http://www.w3.org/2001/XMLSchema' >
+    <xs:simpleType name = 'Internal-Assembly' >
+        <xs:restriction base = 'xs:string' >
+            <xs:enumeration value = 'assembly' >
+                <xs:annotation>
+                    <xs:documentation>
+
+                        <![CDATA[
+
+                            <h3> Assembly </h3>
+
+                            <hr>
+
+                            <p>
+                                <a href = 'https://github.com/FreeCAD/FreeCAD/tree/main/src/Mod/Assembly' >
+                                    <b> 📂 ⁣GitHub </b>
+                                </a>
+                            </p>
+
+                            <p>
+                                <a href = 'https://discord.com/channels/870877411049357352/1004346414471589969' >
+                                    <b> 🎭 Discord </b>
+                                </a>
+                            </p>
+
+                            <p>
+                                <a href = 'https://forum.freecad.org/viewforum.php?f=20' >
+                                    <b> 📜 Forum </b>
+                                </a>
+                            </p>
+
+                            <p>
+                                <a href = 'https://wiki.freecad.org/Assembly_Workbench' >
+                                    <b> 🌐 Wiki </b>
+                                </a>
+                            </p>
+
+                        ]]>
+
+                    </xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+        </xs:restriction>
+    </xs:simpleType>
+</xs:schema>

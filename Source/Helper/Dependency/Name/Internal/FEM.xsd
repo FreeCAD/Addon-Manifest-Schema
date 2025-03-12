@@ -1,0 +1,50 @@
+<?xml
+    version = '1.0'
+    encoding = 'UTF-8'
+?>
+
+<xs:schema xmlns:xs = 'http://www.w3.org/2001/XMLSchema' >
+    <xs:simpleType name = 'Internal-FEM' >
+        <xs:restriction base = 'xs:string' >
+            <xs:enumeration value = 'fem' >
+                <xs:annotation>
+                    <xs:documentation>
+
+                        <![CDATA[
+
+                            <h3> FEM </h3>
+
+                            <hr>
+
+                            <p>
+                                <a href = 'https://github.com/FreeCAD/FreeCAD/tree/main/src/Mod/Fem' >
+                                    <b> 📂 ⁣GitHub </b>
+                                </a>
+                            </p>
+
+                            <p>
+                                <a href = 'https://discord.com/channels/870877411049357352/870885339533811752' >
+                                    <b> 🎭 Discord </b>
+                                </a>
+                            </p>
+
+                            <p>
+                                <a href = 'https://forum.freecad.org/viewforum.php?f=18' >
+                                    <b> 📜 Forum </b>
+                                </a>
+                            </p>
+
+                            <p>
+                                <a href = 'https://wiki.freecad.org/FEM_Workbench' >
+                                    <b> 🌐 Wiki </b>
+                                </a>
+                            </p>
+
+                        ]]>
+
+                    </xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+        </xs:restriction>
+    </xs:simpleType>
+</xs:schema>

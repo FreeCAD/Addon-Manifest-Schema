@@ -1,0 +1,87 @@
+<?xml
+    version = '1.0'
+    encoding = 'UTF-8'
+?>
+
+<xs:schema xmlns:xs = 'http://www.w3.org/2001/XMLSchema' >
+
+    <xs:include schemaLocation = './Spreadsheet.xsd' />
+    <xs:include schemaLocation = './PartDesign.xsd' />
+    <xs:include schemaLocation = './OpenSCAD.xsd' />
+    <xs:include schemaLocation = './TechDraw.xsd' />
+    <xs:include schemaLocation = './Assembly.xsd' />
+    <xs:include schemaLocation = './Sketcher.xsd' />
+    <xs:include schemaLocation = './Points.xsd' />
+    <xs:include schemaLocation = './Robot.xsd' />
+    <xs:include schemaLocation = './Draft.xsd' />
+    <xs:include schemaLocation = './Mesh.xsd' />
+    <xs:include schemaLocation = './Part.xsd' />
+    <xs:include schemaLocation = './BIM.xsd' />
+    <xs:include schemaLocation = './FEM.xsd' />
+    <xs:include schemaLocation = './CAM.xsd' />
+
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+    <xs:simpleType name = 'Internal' >
+        <xs:union>
+
+            <xs:simpleType>
+                <xs:restriction base = 'Internal-Spreadsheet' />
+            </xs:simpleType>
+
+            <xs:simpleType>
+                <xs:restriction base = 'Internal-PartDesign' />
+            </xs:simpleType>
+
+            <xs:simpleType>
+                <xs:restriction base = 'Internal-OpenSCAD' />
+            </xs:simpleType>
+
+            <xs:simpleType>
+                <xs:restriction base = 'Internal-Assembly' />
+            </xs:simpleType>
+
+            <xs:simpleType>
+                <xs:restriction base = 'Internal-Sketcher' />
+            </xs:simpleType>
+
+            <xs:simpleType>
+                <xs:restriction base = 'Internal-TechDraw' />
+            </xs:simpleType>
+
+            <xs:simpleType>
+                <xs:restriction base = 'Internal-Points' />
+            </xs:simpleType>
+
+            <xs:simpleType>
+                <xs:restriction base = 'Internal-Robot' />
+            </xs:simpleType>
+
+            <xs:simpleType>
+                <xs:restriction base = 'Internal-Draft' />
+            </xs:simpleType>
+
+            <xs:simpleType>
+                <xs:restriction base = 'Internal-Mesh' />
+            </xs:simpleType>
+
+            <xs:simpleType>
+                <xs:restriction base = 'Internal-Part' />
+            </xs:simpleType>
+
+            <xs:simpleType>
+                <xs:restriction base = 'Internal-BIM' />
+            </xs:simpleType>
+
+            <xs:simpleType>
+                <xs:restriction base = 'Internal-FEM' />
+            </xs:simpleType>
+
+            <xs:simpleType>
+                <xs:restriction base = 'Internal-CAM' />
+            </xs:simpleType>
+
+        </xs:union>
+    </xs:simpleType>
+
+</xs:schema>
