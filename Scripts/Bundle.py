@@ -23,7 +23,7 @@ files = set()
 def resolveIncludes ( parent , base , depth = Max_Depth ):
 
     if depth == 0 :
-        raise SyntaxError( f'Maximum inclusion depth reached!' , Max_Depth )
+        raise SyntaxError( f'Maximum inclusion depth reached! ( Max Depth : { Max_Depth } )' )
 
     index = 0
 
