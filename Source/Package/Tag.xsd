@@ -75,11 +75,6 @@
                         <xs:enumeration value = 'FEA' />
                         <xs:enumeration value = 'PCB' />
 
-                        <xs:enumeration value = 'Fusion 360' />
-                        <xs:enumeration value = 'Inventor' />
-                        <xs:enumeration value = 'Autodesk' />
-                        <xs:enumeration value = 'KiCAD' />
-
                         <xs:enumeration value = '3D Printing' />
                         <xs:enumeration value = 'Electronics' />
                         <xs:enumeration value = 'Import' />
