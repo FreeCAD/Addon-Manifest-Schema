@@ -5,7 +5,7 @@
 
 <xs:schema xmlns:xs = 'http://www.w3.org/2001/XMLSchema' >
 
-    <xs:include schemaLocation = 'SPDX-Licenses.xsd' />
+    <xs:include schemaLocation = '../Helper/License/mod.xsd' />
 
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 
@@ -39,7 +39,7 @@
 
         <xs:complexType>
             <xs:simpleContent>
-                <xs:extension base = 'Version' >
+                <xs:extension base = 'License' >
 
                     <xs:attribute
                         name = 'file'
@@ -52,36 +52,5 @@
         </xs:complexType>
 
     </xs:element>
-
-    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-
-    <xs:simpleType name = 'Version' >
-        <xs:union>
-
-            <!-- Custom License -->
-
-            <xs:simpleType>
-                <xs:restriction base = 'xs:string' >
-                    <xs:pattern value = '[\s\S]+' />
-                </xs:restriction>
-            </xs:simpleType>
-
-            <!-- All Rights Reserved -->
-
-            <xs:simpleType>
-                <xs:restriction base = 'xs:string' >
-                    <xs:enumeration value = 'UNLICENSED' />
-                </xs:restriction>
-            </xs:simpleType>
-
-            <!-- SPDX Licenses -->
-
-                <xs:simpleType>
-                <xs:restriction base = 'SPDX-License' />
-            </xs:simpleType>
-
-        </xs:union>
-
-    </xs:simpleType>
 
 </xs:schema>

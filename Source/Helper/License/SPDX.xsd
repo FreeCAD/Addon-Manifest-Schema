@@ -4,7 +4,7 @@
 ?>
 
 <xs:schema xmlns:xs = 'http://www.w3.org/2001/XMLSchema' >
-    <xs:simpleType name = 'SPDX-License' >
+    <xs:simpleType name = 'License-SPDX' >
         <xs:restriction base = 'xs:string' >
 
             <xs:enumeration value = '0BSD' />

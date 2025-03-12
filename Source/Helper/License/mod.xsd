@@ -1,0 +1,33 @@
+<?xml
+    version = '1.0'
+    encoding = 'UTF-8'
+?>
+
+<xs:schema xmlns:xs = 'http://www.w3.org/2001/XMLSchema' >
+
+    <xs:include schemaLocation = './Proprietary.xsd' />
+    <xs:include schemaLocation = './Custom.xsd' />
+    <xs:include schemaLocation = './SPDX.xsd' />
+
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+    <xs:simpleType name = 'License' >
+        <xs:union>
+
+            <xs:simpleType>
+                <xs:restriction base = 'License-Proprietary' />
+            </xs:simpleType>
+
+            <xs:simpleType>
+                <xs:restriction base = 'License-Custom' />
+            </xs:simpleType>
+
+            <xs:simpleType>
+                <xs:restriction base = 'License-SPDX' />
+            </xs:simpleType>
+
+        </xs:union>
+
+    </xs:simpleType>
+
+</xs:schema>

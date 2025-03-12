@@ -1,0 +1,14 @@
+<?xml
+    version = '1.0'
+    encoding = 'UTF-8'
+?>
+
+<xs:schema xmlns:xs = 'http://www.w3.org/2001/XMLSchema' >
+
+    <xs:simpleType name = 'License-Custom' >
+        <xs:restriction base = 'xs:string' >
+            <xs:pattern value = '[\s\S]+' />
+        </xs:restriction>
+    </xs:simpleType>
+
+</xs:schema>
