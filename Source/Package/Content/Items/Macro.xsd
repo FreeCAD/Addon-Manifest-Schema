@@ -9,9 +9,14 @@
     <xs:include schemaLocation = '../../Name.xsd' />
     <xs:include schemaLocation = '../File.xsd' />
 
+    <xs:include schemaLocation = './mod.xsd' />
+
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 
-    <xs:element name = 'macro' >
+    <xs:element
+        substitutionGroup = 'Content-Item'
+        name = 'macro'
+    >
 
         <xs:annotation>
             <xs:documentation>

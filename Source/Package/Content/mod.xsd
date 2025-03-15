@@ -5,9 +5,7 @@
 
 <xs:schema xmlns:xs = 'http://www.w3.org/2001/XMLSchema' >
 
-    <xs:include schemaLocation = './Items/PreferencePack.xsd' />
-    <xs:include schemaLocation = './Items/Workbench.xsd' />
-    <xs:include schemaLocation = './Items/Macro.xsd' />
+    <xs:include schemaLocation = './Items/mod.xsd' />
 
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 
@@ -40,21 +38,15 @@
         <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 
         <xs:complexType>
-            <xs:choice>
+            <xs:sequence>
 
                 <xs:element
-                    ref = 'preferencepack'
+                    maxOccurs = '1'
+                    minOccurs = '1'
+                    ref = 'Content-Item'
                 />
 
-                <xs:element
-                    ref = 'workbench'
-                />
-
-                 <xs:element
-                    ref = 'macro'
-                />
-
-            </xs:choice>
+            </xs:sequence>
         </xs:complexType>
 
     </xs:element>

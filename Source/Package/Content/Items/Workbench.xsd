@@ -10,9 +10,14 @@
     <xs:include schemaLocation = '../../Name.xsd' />
     <xs:include schemaLocation = '../Icon.xsd' />
 
+    <xs:include schemaLocation = './mod.xsd' />
+
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 
-    <xs:element name = 'workbench' >
+    <xs:element
+        substitutionGroup = 'Content-Item'
+        name = 'workbench'
+    >
 
         <xs:annotation>
             <xs:documentation>
