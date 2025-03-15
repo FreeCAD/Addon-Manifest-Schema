@@ -3,7 +3,10 @@
     encoding = 'UTF-8'
 ?>
 
-<xs:schema xmlns:xs = 'http://www.w3.org/2001/XMLSchema' >
+<xs:schema
+    elementFormDefault = 'qualified'
+    xmlns:xs = 'http://www.w3.org/2001/XMLSchema'
+>
     <xs:simpleType name = 'Python-Rhino3DM' >
         <xs:restriction base = 'xs:string' >
             <xs:enumeration value = 'rhino3dm' >

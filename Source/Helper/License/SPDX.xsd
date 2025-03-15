@@ -3,7 +3,11 @@
     encoding = 'UTF-8'
 ?>
 
-<xs:schema xmlns:xs = 'http://www.w3.org/2001/XMLSchema' >
+<xs:schema 
+    elementFormDefault = 'qualified'
+    xmlns:xs = 'http://www.w3.org/2001/XMLSchema' 
+>
+
     <xs:simpleType name = 'License-SPDX' >
         <xs:restriction base = 'xs:string' >
 
@@ -658,4 +662,5 @@
 
         </xs:restriction>
     </xs:simpleType>
+    
 </xs:schema>

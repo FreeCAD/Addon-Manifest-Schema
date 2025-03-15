@@ -7,6 +7,8 @@
 
     targetNamespace = 'HTTPS://Addons.FreeCAD.Org/Manifest'
 
+    elementFormDefault = 'qualified'
+
     xmlns:xs = 'http://www.w3.org/2001/XMLSchema'
     xmlns = 'HTTPS://Addons.FreeCAD.Org/Manifest'
 
