@@ -1,0 +1,34 @@
+<?xml
+    version = '1.0'
+    encoding = 'UTF-8'
+?>
+
+<xs:schema xmlns:xs = 'http://www.w3.org/2001/XMLSchema' >
+    <xs:simpleType name = 'Python-ETabsAPI' >
+        <xs:restriction base = 'xs:string' >
+            <xs:enumeration value = 'etabs-api' >
+                <xs:annotation>
+                    <xs:documentation>
+
+                        <![CDATA[
+
+                            <h3> ETabs API </h3>
+
+                            <p> <a href = 'https://www.csiamerica.com/products/etabs' > CSI ETABS </a> & <a href = 'https://www.csiamerica.com/products/safe' > CSI SAFE </a> API. </p>
+
+                            <hr>
+
+                            <p>
+                                <a href = 'https://pypi.org/project/etabs-api/' >
+                                    <b> 📦 ⁣PyPI </b>
+                                </a>
+                            </p>
+
+                        ]]>
+
+                    </xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+        </xs:restriction>
+    </xs:simpleType>
+</xs:schema>

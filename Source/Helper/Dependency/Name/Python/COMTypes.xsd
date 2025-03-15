@@ -1,0 +1,34 @@
+<?xml
+    version = '1.0'
+    encoding = 'UTF-8'
+?>
+
+<xs:schema xmlns:xs = 'http://www.w3.org/2001/XMLSchema' >
+    <xs:simpleType name = 'Python-COMTypes' >
+        <xs:restriction base = 'xs:string' >
+            <xs:enumeration value = 'comtypes' >
+                <xs:annotation>
+                    <xs:documentation>
+
+                        <![CDATA[
+
+                            <h3> COMTypes </h3>
+
+                            <p> Pure Component-Object-Model. </p>
+
+                            <hr>
+
+                            <p>
+                                <a href = 'https://pypi.org/project/comtypes/' >
+                                    <b> 📦 ⁣PyPI </b>
+                                </a>
+                            </p>
+
+                        ]]>
+
+                    </xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+        </xs:restriction>
+    </xs:simpleType>
+</xs:schema>

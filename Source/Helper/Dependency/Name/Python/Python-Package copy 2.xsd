@@ -1,0 +1,39 @@
+<?xml
+    version = '1.0'
+    encoding = 'UTF-8'
+?>
+
+<xs:schema xmlns:xs = 'http://www.w3.org/2001/XMLSchema' >
+    <xs:simpleType name = 'Python-Package' >
+        <xs:restriction base = 'xs:string' >
+
+            <xs:enumeration value = 'pynastran' />
+            <xs:enumeration value = 'PyOpenGL' />
+            <xs:enumeration value = 'pyopenxr' />
+            <xs:enumeration value = 'pyoptools' />
+            <xs:enumeration value = 'pypresence' />
+            <xs:enumeration value = 'py-slvs' />
+            <xs:enumeration value = 'pyvista' />
+            <xs:enumeration value = 'PyYAML' />
+            <xs:enumeration value = 'qtpy' />
+            <xs:enumeration value = 'qtrangeslider' />
+            <xs:enumeration value = 'requests' />
+            <xs:enumeration value = 'rhino3dm' />
+            <xs:enumeration value = 'scikit-image' />
+            <xs:enumeration value = 'scikit-learn' />
+            <xs:enumeration value = 'scikit-sparse' />
+            <xs:enumeration value = 'scipy' />
+            <xs:enumeration value = 'sentry_sdk' />
+            <xs:enumeration value = 'shapely' />
+            <xs:enumeration value = 'streamdeck' />
+            <xs:enumeration value = 'trimesh' />
+            <xs:enumeration value = 'tzlocal' />
+            <xs:enumeration value = 'vedo' />
+            <xs:enumeration value = 'wakatime-cli' />
+            <xs:enumeration value = 'xlrd' />
+            <xs:enumeration value = 'xlutils' />
+            <xs:enumeration value = 'xlwt' />
+
+        </xs:restriction>
+    </xs:simpleType>
+</xs:schema>

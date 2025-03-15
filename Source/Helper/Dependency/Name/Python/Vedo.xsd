@@ -1,0 +1,34 @@
+<?xml
+    version = '1.0'
+    encoding = 'UTF-8'
+?>
+
+<xs:schema xmlns:xs = 'http://www.w3.org/2001/XMLSchema' >
+    <xs:simpleType name = 'Python-Vedo' >
+        <xs:restriction base = 'xs:string' >
+            <xs:enumeration value = 'vedo' >
+                <xs:annotation>
+                    <xs:documentation>
+
+                        <![CDATA[
+
+                            <h3> Vedo </h3>
+
+                            <p> Visualization & analysis of 3D objects & point clouds. </p>
+
+                            <hr>
+
+                            <p>
+                                <a href = 'https://pypi.org/project/vedo/' >
+                                    <b> 📦 ⁣PyPI </b>
+                                </a>
+                            </p>
+
+                        ]]>
+
+                    </xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+        </xs:restriction>
+    </xs:simpleType>
+</xs:schema>

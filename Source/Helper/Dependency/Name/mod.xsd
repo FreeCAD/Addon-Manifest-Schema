@@ -5,8 +5,8 @@
 
 <xs:schema xmlns:xs = 'http://www.w3.org/2001/XMLSchema' >
 
-    <xs:include schemaLocation = './Python-Package.xsd' />
     <xs:include schemaLocation = './Internal/mod.xsd' />
+    <xs:include schemaLocation = './Python/mod.xsd' />
 
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 
@@ -24,7 +24,7 @@
             <!-- Python Package -->
 
             <xs:simpleType>
-                <xs:restriction base = 'Python-Package' />
+                <xs:restriction base = 'Python' />
             </xs:simpleType>
 
             <!-- Internal Mod -->

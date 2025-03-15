@@ -1,0 +1,34 @@
+<?xml
+    version = '1.0'
+    encoding = 'UTF-8'
+?>
+
+<xs:schema xmlns:xs = 'http://www.w3.org/2001/XMLSchema' >
+    <xs:simpleType name = 'Python-PyOpenXR' >
+        <xs:restriction base = 'xs:string' >
+            <xs:enumeration value = 'pyopenxr' >
+                <xs:annotation>
+                    <xs:documentation>
+
+                        <![CDATA[
+
+                            <h3> PyOpenXR </h3>
+
+                            <p> OpenXR VR / AP device access. </p>
+
+                            <hr>
+
+                            <p>
+                                <a href = 'https://pypi.org/project/pyopenxr/' >
+                                    <b> 📦 ⁣PyPI </b>
+                                </a>
+                            </p>
+
+                        ]]>
+
+                    </xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+        </xs:restriction>
+    </xs:simpleType>
+</xs:schema>

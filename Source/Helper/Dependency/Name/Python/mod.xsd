@@ -1,0 +1,148 @@
+<?xml
+    version = '1.0'
+    encoding = 'UTF-8'
+?>
+
+<xs:schema xmlns:xs = 'http://www.w3.org/2001/XMLSchema' >
+
+    <xs:include schemaLocation = './WakaTime-Client.xsd' />
+    <xs:include schemaLocation = './BeautifulSoup4.xsd' />
+    <xs:include schemaLocation = './QTRangeSlider.xsd' />
+    <xs:include schemaLocation = './SciKit-Sparse.xsd' />
+    <xs:include schemaLocation = './AtomicWrites.xsd' />
+    <xs:include schemaLocation = './SciKit-Image.xsd' />
+    <xs:include schemaLocation = './SciKit-Learn.xsd' />
+    <xs:include schemaLocation = './PyOpenTools.xsd' />
+    <xs:include schemaLocation = './MatPlotLib.xsd' />
+    <xs:include schemaLocation = './NodeEditor.xsd' />
+    <xs:include schemaLocation = './PyG4ometry.xsd' />
+    <xs:include schemaLocation = './PyPresence.xsd' />
+    <xs:include schemaLocation = './Sentry-SDK.xsd' />
+    <xs:include schemaLocation = './StreamDeck.xsd' />
+    <xs:include schemaLocation = './Capytaine.xsd' />
+    <xs:include schemaLocation = './Hausdorff.xsd' />
+    <xs:include schemaLocation = './PyCollaDA.xsd' />
+    <xs:include schemaLocation = './PyNastran.xsd' />
+    <xs:include schemaLocation = './Autobahn.xsd' />
+    <xs:include schemaLocation = './AIOFiles.xsd' />
+    <xs:include schemaLocation = './COMTypes.xsd' />
+    <xs:include schemaLocation = './DocUtils.xsd' />
+    <xs:include schemaLocation = './ETabsAPI.xsd' />
+    <xs:include schemaLocation = './Markdown.xsd' />
+    <xs:include schemaLocation = './NetworkX.xsd' />
+    <xs:include schemaLocation = './OpenPyXL.xsd' />
+    <xs:include schemaLocation = './ProtoBuf.xsd' />
+    <xs:include schemaLocation = './PyOpenGL.xsd' />
+    <xs:include schemaLocation = './PyOpenXR.xsd' />
+    <xs:include schemaLocation = './Requests.xsd' />
+    <xs:include schemaLocation = './Rhino3DM.xsd' />
+    <xs:include schemaLocation = './AsyncUA.xsd' />
+    <xs:include schemaLocation = './Awkward.xsd' />
+    <xs:include schemaLocation = './Blinker.xsd' />
+    <xs:include schemaLocation = './Certifi.xsd' />
+    <xs:include schemaLocation = './OLEFile.xsd' />
+    <xs:include schemaLocation = './OpenEXR.xsd' />
+    <xs:include schemaLocation = './PostHog.xsd' />
+    <xs:include schemaLocation = './Py-SLVS.xsd' />
+    <xs:include schemaLocation = './PyVista.xsd' />
+    <xs:include schemaLocation = './Shapely.xsd' />
+    <xs:include schemaLocation = './TriMesh.xsd' />
+    <xs:include schemaLocation = './TzLocal.xsd' />
+    <xs:include schemaLocation = './XLUtils.xsd' />
+    <xs:include schemaLocation = './GeoMdl.xsd' />
+    <xs:include schemaLocation = './MeshIO.xsd' />
+    <xs:include schemaLocation = './Pandas.xsd' />
+    <xs:include schemaLocation = './Pillow.xsd' />
+    <xs:include schemaLocation = './PyDocX.xsd' />
+    <xs:include schemaLocation = './PyGit2.xsd' />
+    <xs:include schemaLocation = './PyYAML.xsd' />
+    <xs:include schemaLocation = './Numpy.xsd' />
+    <xs:include schemaLocation = './Numba.xsd' />
+    <xs:include schemaLocation = './EzDXF.xsd' />
+    <xs:include schemaLocation = './PyJWT.xsd' />
+    <xs:include schemaLocation = './SciPy.xsd' />
+    <xs:include schemaLocation = './GMsh.xsd' />
+    <xs:include schemaLocation = './LXML.xsd' />
+    <xs:include schemaLocation = './XLWt.xsd' />
+    <xs:include schemaLocation = './XLRd.xsd' />
+    <xs:include schemaLocation = './Nine.xsd' />
+    <xs:include schemaLocation = './QTPy.xsd' />
+    <xs:include schemaLocation = './Vedo.xsd' />
+    <xs:include schemaLocation = './OCP.xsd' />
+    <xs:include schemaLocation = './PLY.xsd' />
+
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+    <xs:simpleType name = 'Python' >
+        <xs:union>
+
+            <xs:simpleType> <xs:restriction base = 'Python-WakaTime-Client' /> </xs:simpleType>
+            <xs:simpleType> <xs:restriction base = 'Python-BeautifulSoup4' /> </xs:simpleType>
+            <xs:simpleType> <xs:restriction base = 'Python-QTRangeSlider' /> </xs:simpleType>
+            <xs:simpleType> <xs:restriction base = 'Python-SciKit-Sparse' /> </xs:simpleType>
+            <xs:simpleType> <xs:restriction base = 'Python-AtomicWrites' /> </xs:simpleType>
+            <xs:simpleType> <xs:restriction base = 'Python-SciKit-Image' /> </xs:simpleType>
+            <xs:simpleType> <xs:restriction base = 'Python-SciKit-Learn' /> </xs:simpleType>
+            <xs:simpleType> <xs:restriction base = 'Python-PyOpenTools' /> </xs:simpleType>
+            <xs:simpleType> <xs:restriction base = 'Python-MatPlotLib' /> </xs:simpleType>
+            <xs:simpleType> <xs:restriction base = 'Python-NodeEditor' /> </xs:simpleType>
+            <xs:simpleType> <xs:restriction base = 'Python-PyG4ometry' /> </xs:simpleType>
+            <xs:simpleType> <xs:restriction base = 'Python-PyPresence' /> </xs:simpleType>
+            <xs:simpleType> <xs:restriction base = 'Python-Sentry-SDK' /> </xs:simpleType>
+            <xs:simpleType> <xs:restriction base = 'Python-StreamDeck' /> </xs:simpleType>
+            <xs:simpleType> <xs:restriction base = 'Python-Capytaine' /> </xs:simpleType>
+            <xs:simpleType> <xs:restriction base = 'Python-Hausdorff' /> </xs:simpleType>
+            <xs:simpleType> <xs:restriction base = 'Python-PyCollaDA' /> </xs:simpleType>
+            <xs:simpleType> <xs:restriction base = 'Python-PyNastran' /> </xs:simpleType>
+            <xs:simpleType> <xs:restriction base = 'Python-Autobahn' /> </xs:simpleType>
+            <xs:simpleType> <xs:restriction base = 'Python-AIOFiles' /> </xs:simpleType>
+            <xs:simpleType> <xs:restriction base = 'Python-COMTypes' /> </xs:simpleType>
+            <xs:simpleType> <xs:restriction base = 'Python-DocUtils' /> </xs:simpleType>
+            <xs:simpleType> <xs:restriction base = 'Python-ETabsAPI' /> </xs:simpleType>
+            <xs:simpleType> <xs:restriction base = 'Python-Markdown' /> </xs:simpleType>
+            <xs:simpleType> <xs:restriction base = 'Python-NetworkX' /> </xs:simpleType>
+            <xs:simpleType> <xs:restriction base = 'Python-OpenPyXL' /> </xs:simpleType>
+            <xs:simpleType> <xs:restriction base = 'Python-ProtoBuf' /> </xs:simpleType>
+            <xs:simpleType> <xs:restriction base = 'Python-PyOpenGL' /> </xs:simpleType>
+            <xs:simpleType> <xs:restriction base = 'Python-PyOpenXR' /> </xs:simpleType>
+            <xs:simpleType> <xs:restriction base = 'Python-Requests' /> </xs:simpleType>
+            <xs:simpleType> <xs:restriction base = 'Python-Rhino3DM' /> </xs:simpleType>
+            <xs:simpleType> <xs:restriction base = 'Python-AsyncUA' /> </xs:simpleType>
+            <xs:simpleType> <xs:restriction base = 'Python-Awkward' /> </xs:simpleType>
+            <xs:simpleType> <xs:restriction base = 'Python-Blinker' /> </xs:simpleType>
+            <xs:simpleType> <xs:restriction base = 'Python-Certifi' /> </xs:simpleType>
+            <xs:simpleType> <xs:restriction base = 'Python-OLEFile' /> </xs:simpleType>
+            <xs:simpleType> <xs:restriction base = 'Python-OpenEXR' /> </xs:simpleType>
+            <xs:simpleType> <xs:restriction base = 'Python-PostHog' /> </xs:simpleType>
+            <xs:simpleType> <xs:restriction base = 'Python-Py-SLVS' /> </xs:simpleType>
+            <xs:simpleType> <xs:restriction base = 'Python-PyVista' /> </xs:simpleType>
+            <xs:simpleType> <xs:restriction base = 'Python-Shapely' /> </xs:simpleType>
+            <xs:simpleType> <xs:restriction base = 'Python-TriMesh' /> </xs:simpleType>
+            <xs:simpleType> <xs:restriction base = 'Python-TzLocal' /> </xs:simpleType>
+            <xs:simpleType> <xs:restriction base = 'Python-XLUtils' /> </xs:simpleType>
+            <xs:simpleType> <xs:restriction base = 'Python-GeoMdl' /> </xs:simpleType>
+            <xs:simpleType> <xs:restriction base = 'Python-MeshIO' /> </xs:simpleType>
+            <xs:simpleType> <xs:restriction base = 'Python-Pandas' /> </xs:simpleType>
+            <xs:simpleType> <xs:restriction base = 'Python-Pillow' /> </xs:simpleType>
+            <xs:simpleType> <xs:restriction base = 'Python-PyDocX' /> </xs:simpleType>
+            <xs:simpleType> <xs:restriction base = 'Python-PyGit2' /> </xs:simpleType>
+            <xs:simpleType> <xs:restriction base = 'Python-PyYAML' /> </xs:simpleType>
+            <xs:simpleType> <xs:restriction base = 'Python-Numba' /> </xs:simpleType>
+            <xs:simpleType> <xs:restriction base = 'Python-EzDXF' /> </xs:simpleType>
+            <xs:simpleType> <xs:restriction base = 'Python-Numpy' /> </xs:simpleType>
+            <xs:simpleType> <xs:restriction base = 'Python-PyJWT' /> </xs:simpleType>
+            <xs:simpleType> <xs:restriction base = 'Python-SciPy' /> </xs:simpleType>
+            <xs:simpleType> <xs:restriction base = 'Python-GMsh' /> </xs:simpleType>
+            <xs:simpleType> <xs:restriction base = 'Python-LXML' /> </xs:simpleType>
+            <xs:simpleType> <xs:restriction base = 'Python-Nine' /> </xs:simpleType>
+            <xs:simpleType> <xs:restriction base = 'Python-QTPy' /> </xs:simpleType>
+            <xs:simpleType> <xs:restriction base = 'Python-Vedo' /> </xs:simpleType>
+            <xs:simpleType> <xs:restriction base = 'Python-XLWt' /> </xs:simpleType>
+            <xs:simpleType> <xs:restriction base = 'Python-XLRd' /> </xs:simpleType>
+            <xs:simpleType> <xs:restriction base = 'Python-OCP' /> </xs:simpleType>
+            <xs:simpleType> <xs:restriction base = 'Python-PLY' /> </xs:simpleType>
+
+        </xs:union>
+    </xs:simpleType>
+
+</xs:schema>

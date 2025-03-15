@@ -1,0 +1,34 @@
+<?xml
+    version = '1.0'
+    encoding = 'UTF-8'
+?>
+
+<xs:schema xmlns:xs = 'http://www.w3.org/2001/XMLSchema' >
+    <xs:simpleType name = 'Python-XLUtils' >
+        <xs:restriction base = 'xs:string' >
+            <xs:enumeration value = 'xlutils' >
+                <xs:annotation>
+                    <xs:documentation>
+
+                        <![CDATA[
+
+                            <h3> XLUtils </h3>
+
+                            <p> Helper for XLRd & XLWt. </p>
+
+                            <hr>
+
+                            <p>
+                                <a href = 'https://pypi.org/project/xlutils/' >
+                                    <b> 📦 ⁣PyPI </b>
+                                </a>
+                            </p>
+
+                        ]]>
+
+                    </xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+        </xs:restriction>
+    </xs:simpleType>
+</xs:schema>
