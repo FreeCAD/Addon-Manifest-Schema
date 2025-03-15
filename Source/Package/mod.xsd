@@ -26,7 +26,10 @@
 
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 
-    <xs:element name = 'package' >
+    <xs:element
+        final = '#all'
+        name = 'package'
+    >
 
         <xs:annotation>
             <xs:documentation xml:lang = 'en' >
@@ -59,52 +62,107 @@
             <xs:sequence>
                 <xs:choice maxOccurs = 'unbounded' >
 
-                    <xs:element ref = 'description' />
-                    <xs:element ref = 'content' />
-                    <xs:element ref = 'license' />
-                    <xs:element ref = 'version' />
-                    <xs:element ref = 'date' />
-                    <xs:element ref = 'name' />
-                    <xs:element ref = 'icon' />
+                    <xs:element
+                        maxOccurs = '1'
+                        minOccurs = '1'
+                        ref = 'description'
+                    />
+
+                    <xs:element
+                        maxOccurs = '1'
+                        minOccurs = '1'
+                        ref = 'content'
+                    />
 
                     <xs:element
                         maxOccurs = 'unbounded'
+                        minOccurs = '1'
+                        ref = 'license'
+                    />
+
+                    <xs:element
+                        maxOccurs = '1'
+                        minOccurs = '1'
+                        ref = 'version'
+                    />
+
+                    <xs:element
+                        maxOccurs = '1'
+                        minOccurs = '1'
+                        ref = 'date'
+                    />
+
+                    <xs:element
+                        maxOccurs = '1'
+                        minOccurs = '1'
+                        ref = 'name'
+                    />
+
+                    <xs:element
+                        maxOccurs = '1'
+                        minOccurs = '1'
+                        ref = 'icon'
+                    />
+
+                    <xs:element
+                        maxOccurs = 'unbounded'
+                        minOccurs = '1'
                         ref = 'maintainer'
                     />
 
                     <xs:element
                         maxOccurs = 'unbounded'
+                        minOccurs = '1'
                         ref = 'author'
                     />
 
                     <xs:element
                         maxOccurs = 'unbounded'
+                        minOccurs = '0'
                         ref = 'url'
                     />
 
                     <xs:element
                         maxOccurs = 'unbounded'
+                        minOccurs = '0'
                         ref = 'depend'
                     />
 
                     <xs:element
                         maxOccurs = 'unbounded'
+                        minOccurs = '0'
                         ref = 'conflict'
                     />
 
                     <xs:element
                         maxOccurs = 'unbounded'
+                        minOccurs = '0'
                         ref = 'replace'
                     />
 
                     <xs:element
                         maxOccurs = 'unbounded'
+                        minOccurs = '3'
                         ref = 'tag'
                     />
 
-                    <xs:element ref = 'freecadmin' />
-                    <xs:element ref = 'freecadmax' />
-                    <xs:element ref = 'pythonmin' />
+                    <xs:element
+                        maxOccurs = '1'
+                        minOccurs = '1'
+                        ref = 'freecadmin'
+                    />
+
+                    <xs:element
+                        maxOccurs = '1'
+                        minOccurs = '0'
+                        ref = 'freecadmax'
+                    />
+
+                    <xs:element
+                        maxOccurs = '1'
+                        minOccurs = '1'
+                        ref = 'pythonmin'
+                    />
 
                 </xs:choice>
             </xs:sequence>
