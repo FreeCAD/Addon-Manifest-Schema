@@ -76,7 +76,7 @@
 
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 
-    <xs:simpleType name = 'Python' >
+    <xs:simpleType name = 'Python-Name' >
         <xs:union>
 
             <xs:simpleType> <xs:restriction base = 'Python-WakaTime-Client' /> </xs:simpleType>

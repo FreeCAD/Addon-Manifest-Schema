@@ -10,6 +10,7 @@
 
     <xs:include schemaLocation = './Internal/mod.xsd' />
     <xs:include schemaLocation = './Python/mod.xsd' />
+    <xs:include schemaLocation = './Addon.xsd' />
 
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 
@@ -19,21 +20,19 @@
             <!-- Community Addon -->
 
             <xs:simpleType>
-                <xs:restriction base = 'xs:string' >
-                    <xs:pattern value = '[\s\S]+' />
-                </xs:restriction>
+                <xs:restriction base = 'Addon-Name' />
             </xs:simpleType>
 
             <!-- Python Package -->
 
             <xs:simpleType>
-                <xs:restriction base = 'Python' />
+                <xs:restriction base = 'Python-Name' />
             </xs:simpleType>
 
             <!-- Internal Mod -->
 
             <xs:simpleType>
-                <xs:restriction base = 'Internal' />
+                <xs:restriction base = 'Internal-Name' />
             </xs:simpleType>
 
         </xs:union>
