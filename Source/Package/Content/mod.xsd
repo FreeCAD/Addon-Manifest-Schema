@@ -12,7 +12,8 @@
 
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 
-    <xs:complexType 
+    <xs:complexType
+        final = '#all' 
         name = 'Package-Content' 
     >
 

@@ -8,7 +8,10 @@
     xmlns:xs = 'http://www.w3.org/2001/XMLSchema' 
 >
 
-    <xs:element name = 'classname' >
+    <xs:simpleType 
+        final = '#all'
+        name = 'Item-Classname' 
+    >
 
         <xs:annotation>
             <xs:documentation>
@@ -36,10 +39,8 @@
 
         <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 
-        <xs:simpleType>
-            <xs:restriction base = 'xs:token' />
-        </xs:simpleType>
+        <xs:restriction base = 'xs:token' />
 
-    </xs:element>
+    </xs:simpleType>
     
 </xs:schema>

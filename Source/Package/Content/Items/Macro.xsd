@@ -49,11 +49,18 @@
             <xs:sequence>
                 <xs:choice maxOccurs = 'unbounded' >
 
-                    <xs:element ref = 'subdirectory' />
+                    <xs:element 
+                        maxOccurs = '1'
+                        minOccurs = '0'
+                        type = 'Item-Subdirectory'
+                        name = 'subdirectory' 
+                    />
                     
                     <xs:element
                         maxOccurs = 'unbounded'
-                        ref = 'file'
+                        minOccurs = '1'
+                        type = 'Item-File'
+                        name = 'file'
                     />
 
                 </xs:choice>
