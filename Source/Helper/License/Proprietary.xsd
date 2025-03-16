@@ -8,10 +8,14 @@
     xmlns:xs = 'http://www.w3.org/2001/XMLSchema' 
 >
 
-    <xs:simpleType name = 'License-Proprietary' >
+    <xs:simpleType 
+        name = 'License-Proprietary' 
+    >
+
         <xs:restriction base = 'xs:string' >
             <xs:enumeration value = 'UNLICENSED' />
         </xs:restriction>
+    
     </xs:simpleType>
 
 </xs:schema>

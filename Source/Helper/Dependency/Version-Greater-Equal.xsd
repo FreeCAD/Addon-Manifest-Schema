@@ -13,6 +13,7 @@
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 
     <xs:simpleType
+        final = '#all'
         name = 'Version-Greater-Equal'
     >
 

@@ -14,7 +14,10 @@
 
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 
-    <xs:simpleType name = 'License' >
+    <xs:simpleType 
+        final = 'restriction union list'
+        name = 'License' 
+    >
         <xs:union>
 
             <xs:simpleType>

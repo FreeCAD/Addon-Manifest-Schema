@@ -8,7 +8,9 @@
     xmlns:xs = 'http://www.w3.org/2001/XMLSchema' 
 >
 
-    <xs:simpleType name = 'Version-Semantic-Full' >
+    <xs:simpleType 
+        name = 'Version-Semantic-Full' 
+    >
 
         <!--
             Abbreviated version from:

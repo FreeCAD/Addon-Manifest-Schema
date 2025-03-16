@@ -8,7 +8,10 @@
     xmlns:xs = 'http://www.w3.org/2001/XMLSchema' 
 >
 
-    <xs:simpleType name = 'License-SPDX' >
+    <xs:simpleType 
+        name = 'License-SPDX' 
+    >
+    
         <xs:restriction base = 'xs:string' >
 
             <xs:enumeration value = '0BSD' />
@@ -661,6 +664,7 @@
             <xs:enumeration value = 'ZPL-2.1' />
 
         </xs:restriction>
+
     </xs:simpleType>
     
 </xs:schema>

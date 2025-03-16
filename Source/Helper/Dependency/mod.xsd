@@ -20,7 +20,10 @@
 
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 
-    <xs:complexType name = 'Required-Dependency' >
+    <xs:complexType 
+        final = 'restriction'
+        name = 'Required-Dependency' 
+    >
         <xs:simpleContent>
 
             <xs:extension base = 'Dependency-Name' >

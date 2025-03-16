@@ -12,7 +12,28 @@
 
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 
-    <xs:complexType name = 'Contact' >
+    <xs:complexType 
+        name = 'Contact'
+    >
+
+        <xs:annotation>
+            <xs:documentation>
+
+                <![CDATA[
+
+                    <h3> Contact </h3>
+
+                    <hr>
+
+                    <p> Public contact information of a person. </p>
+
+                ]]>
+
+            </xs:documentation>
+        </xs:annotation>
+
+        <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
         <xs:simpleContent>
             <xs:extension base = 'xs:string' >
 
@@ -24,6 +45,7 @@
 
             </xs:extension>
         </xs:simpleContent>
+    
     </xs:complexType>
 
 </xs:schema>

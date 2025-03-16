@@ -9,6 +9,7 @@
 >
 
     <xs:simpleType
+        final = '#all'
         name = 'Url-Branch'
     >
 

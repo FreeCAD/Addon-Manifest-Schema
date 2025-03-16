@@ -9,6 +9,7 @@
 >
 
     <xs:simpleType
+        final = '#all'
         name = 'Dependency-Type'
     >
 
@@ -37,7 +38,6 @@
         </xs:annotation>
 
         <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-
 
         <xs:restriction base = 'xs:string' >
             <xs:enumeration value = 'internal' />
