@@ -9,9 +9,7 @@
 >
 
     <xs:include schemaLocation = '../SubDirectory.xsd' />
-    <xs:include schemaLocation = '../../Name.xsd' />
     <xs:include schemaLocation = '../File.xsd' />
-
     <xs:include schemaLocation = './mod.xsd' />
 
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
@@ -53,11 +51,6 @@
 
                     <xs:element ref = 'subdirectory' />
                     
-                    <xs:element
-                        type = 'Package-Name' 
-                        name = 'name' 
-                    />
-
                     <xs:element
                         maxOccurs = 'unbounded'
                         minOccurs = '0'

@@ -12,7 +12,6 @@
     <xs:include schemaLocation = './FreeCAD-Minimum.xsd' />
     <xs:include schemaLocation = './FreeCAD-Maximum.xsd' />
     <xs:include schemaLocation = './Python-Minimum.xsd' />
-    <xs:include schemaLocation = './Content/Icon.xsd' />
     <xs:include schemaLocation = './Description.xsd' />
     <xs:include schemaLocation = './Content/mod.xsd' />
     <xs:include schemaLocation = './Maintainer.xsd' />
@@ -23,6 +22,7 @@
     <xs:include schemaLocation = './Url/mod.xsd' />
     <xs:include schemaLocation = './Depend.xsd' />
     <xs:include schemaLocation = './Author.xsd' />
+    <xs:include schemaLocation = './Icon.xsd' />
     <xs:include schemaLocation = './Name.xsd' />
     <xs:include schemaLocation = './Date.xsd' />
     <xs:include schemaLocation = './Tag.xsd' />

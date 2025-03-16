@@ -10,8 +10,6 @@
 
     <xs:include schemaLocation = '../SubDirectory.xsd' />
     <xs:include schemaLocation = '../ClassName.xsd' />
-    <xs:include schemaLocation = '../../Name.xsd' />
-
     <xs:include schemaLocation = './mod.xsd' />
 
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
@@ -54,11 +52,6 @@
                     <xs:element ref = 'subdirectory' />
                     <xs:element ref = 'classname' />
                     
-                    <xs:element
-                        type = 'Package-Name' 
-                        name = 'name' 
-                    />
-
                 </xs:choice>
             </xs:sequence>
         </xs:complexType>
