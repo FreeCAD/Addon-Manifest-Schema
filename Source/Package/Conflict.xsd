@@ -12,9 +12,9 @@
 
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 
-    <xs:element
-        type = 'Required-Dependency'
-        name = 'conflict'
+    <xs:complexType
+        final = '#all'
+        name = 'Package-Conflict'
     >
 
         <xs:annotation>
@@ -41,6 +41,10 @@
             </xs:documentation>
         </xs:annotation>
 
-    </xs:element>
+        <xs:complexContent>
+            <xs:extension base = 'Required-Dependency' />
+        </xs:complexContent>
+
+    </xs:complexType>
 
 </xs:schema>

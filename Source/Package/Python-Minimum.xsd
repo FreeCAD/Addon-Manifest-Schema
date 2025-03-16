@@ -12,7 +12,10 @@
 
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 
-    <xs:element name = 'pythonmin' >
+    <xs:simpleType 
+        final = '#all'
+        name = 'Package-Python-Minimum' 
+    >
 
         <xs:annotation>
             <xs:documentation>
@@ -46,10 +49,8 @@
 
         <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 
-        <xs:simpleType>
-            <xs:restriction base = 'Version-Semantic-Basic' />
-        </xs:simpleType>
+        <xs:restriction base = 'Version-Semantic-Basic' />
 
-    </xs:element>
+    </xs:simpleType>
 
 </xs:schema>

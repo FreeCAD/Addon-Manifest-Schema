@@ -68,103 +68,120 @@
                     <xs:element
                         maxOccurs = '1'
                         minOccurs = '1'
-                        ref = 'description'
+                        type = 'Package-Description'
+                        name = 'description'
                     />
 
                     <xs:element
                         maxOccurs = '1'
                         minOccurs = '1'
-                        ref = 'content'
+                        type = 'Package-Content'
+                        name = 'content'
                     />
 
                     <xs:element
                         maxOccurs = 'unbounded'
                         minOccurs = '1'
-                        ref = 'license'
+                        type = 'Package-License'
+                        name = 'license'
                     />
 
                     <xs:element
                         maxOccurs = '1'
                         minOccurs = '1'
-                        ref = 'version'
+                        type = 'Package-Version'
+                        name = 'version'
                     />
 
                     <xs:element
                         maxOccurs = '1'
                         minOccurs = '1'
-                        ref = 'date'
+                        type = 'Package-Date'
+                        name = 'date'
                     />
 
                     <xs:element
                         maxOccurs = '1'
                         minOccurs = '1'
-                        ref = 'name'
+                        type = 'Package-Name'
+                        name = 'name'
                     />
 
                     <xs:element
                         maxOccurs = '1'
                         minOccurs = '1'
-                        ref = 'icon'
+                        type = 'Package-Icon'
+                        name = 'icon'
                     />
 
                     <xs:element
                         maxOccurs = 'unbounded'
                         minOccurs = '1'
-                        ref = 'maintainer'
+                        type = 'Package-Maintainer'
+                        name = 'maintainer'
                     />
 
                     <xs:element
                         maxOccurs = 'unbounded'
                         minOccurs = '1'
-                        ref = 'author'
+                        type = 'Package-Author'
+                        name = 'author'
                     />
 
                     <xs:element
                         maxOccurs = 'unbounded'
                         minOccurs = '0'
-                        ref = 'url'
+                        type = 'Package-Url'
+                        name = 'url'
                     />
 
                     <xs:element
                         maxOccurs = 'unbounded'
                         minOccurs = '0'
-                        ref = 'depend'
+                        type = 'Package-Depend'
+                        name = 'depend'
                     />
 
                     <xs:element
                         maxOccurs = 'unbounded'
                         minOccurs = '0'
-                        ref = 'conflict'
+                        type = 'Package-Conflict'
+                        name = 'conflict'
                     />
 
                     <xs:element
                         maxOccurs = 'unbounded'
                         minOccurs = '0'
-                        ref = 'replace'
+                        type = 'Package-Replace'
+                        name = 'replace'
                     />
 
                     <xs:element
                         maxOccurs = 'unbounded'
                         minOccurs = '3'
-                        ref = 'tag'
+                        type = 'Package-Tag'
+                        name = 'tag'
                     />
 
                     <xs:element
                         maxOccurs = '1'
                         minOccurs = '1'
-                        ref = 'freecadmin'
+                        type = 'Package-FreeCAD-Minimum'
+                        name = 'freecadmin'
                     />
 
                     <xs:element
                         maxOccurs = '1'
                         minOccurs = '0'
-                        ref = 'freecadmax'
+                        type = 'Package-FreeCAD-Maximum'
+                        name = 'freecadmax'
                     />
 
                     <xs:element
                         maxOccurs = '1'
                         minOccurs = '1'
-                        ref = 'pythonmin'
+                        type = 'Package-Python-Minimum'
+                        name = 'pythonmin'
                     />
 
                 </xs:choice>

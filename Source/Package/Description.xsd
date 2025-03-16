@@ -8,9 +8,9 @@
     xmlns:xs = 'http://www.w3.org/2001/XMLSchema' 
 >
 
-    <xs:element
+    <xs:simpleType
         final = '#all'
-        name = 'description'
+        name = 'Package-Description'
     >
 
         <xs:annotation>
@@ -58,13 +58,11 @@
 
         <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 
-        <xs:simpleType>
-            <xs:restriction base = 'xs:string' >
-                <xs:maxLength value = '200' />
-                <xs:minLength value = '10' />
-            </xs:restriction>
-        </xs:simpleType>
+        <xs:restriction base = 'xs:string' >
+            <xs:maxLength value = '200' />
+            <xs:minLength value = '10' />
+        </xs:restriction>
 
-    </xs:element>
+    </xs:simpleType>
 
 </xs:schema>

@@ -12,7 +12,10 @@
 
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 
-    <xs:element name = 'license' >
+    <xs:complexType
+        final = '#all' 
+        name = 'Package-License' 
+    >
 
         <xs:annotation>
             <xs:documentation>
@@ -40,20 +43,18 @@
 
         <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 
-        <xs:complexType>
-            <xs:simpleContent>
-                <xs:extension base = 'License' >
+        <xs:simpleContent>
+            <xs:extension base = 'License' >
 
-                    <xs:attribute
-                        name = 'file'
-                        type = 'xs:string'
-                        use = 'optional'
-                    />
+                <xs:attribute
+                    name = 'file'
+                    type = 'xs:string'
+                    use = 'optional'
+                />
 
-                </xs:extension>
-            </xs:simpleContent>
-        </xs:complexType>
+            </xs:extension>
+        </xs:simpleContent>
 
-    </xs:element>
+    </xs:complexType>
 
 </xs:schema>

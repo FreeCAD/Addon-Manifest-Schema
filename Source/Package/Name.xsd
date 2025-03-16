@@ -8,7 +8,10 @@
     xmlns:xs = 'http://www.w3.org/2001/XMLSchema' 
 >
 
-    <xs:element name = 'name' >
+    <xs:simpleType
+        final = '#all' 
+        name = 'Package-Name'
+    >
 
         <xs:annotation>
             <xs:documentation>
@@ -42,12 +45,10 @@
 
         <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 
-        <xs:simpleType>
-            <xs:restriction base = 'xs:string' >
-                <xs:pattern value = '[^\\/\\\\?\\%\\*\\:\\|\\"&lt;&gt;]+' />
-            </xs:restriction>
-        </xs:simpleType>
+        <xs:restriction base = 'xs:string' >
+            <xs:pattern value = '[^\\/\\\\?\\%\\*\\:\\|\\"&lt;&gt;]+' />
+        </xs:restriction>
 
-    </xs:element>
+    </xs:simpleType>
     
 </xs:schema>

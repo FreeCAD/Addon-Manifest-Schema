@@ -8,7 +8,10 @@
     xmlns:xs = 'http://www.w3.org/2001/XMLSchema' 
 >
 
-    <xs:element name = 'icon' >
+    <xs:simpleType 
+        final = '#all'
+        name = 'Package-Icon'
+    >
 
         <xs:annotation>
             <xs:documentation>
@@ -36,10 +39,8 @@
 
         <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 
-        <xs:simpleType>
-            <xs:restriction base = 'xs:anyURI' />
-        </xs:simpleType>
+        <xs:restriction base = 'xs:anyURI' />
 
-    </xs:element>
+    </xs:simpleType>
     
 </xs:schema>

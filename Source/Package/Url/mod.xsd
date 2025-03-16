@@ -13,8 +13,9 @@
 
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 
-    <xs:element
-        name = 'url'
+    <xs:complexType
+        final = '#all'
+        name = 'Package-Url'
     >
 
         <xs:annotation>
@@ -43,26 +44,24 @@
 
         <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 
-        <xs:complexType>
-            <xs:simpleContent>
-                <xs:extension base = 'xs:anyURI' >
+        <xs:simpleContent>
+            <xs:extension base = 'xs:anyURI' >
 
-                    <xs:attribute
-                        type = 'Url-Type'
-                        name = 'type'
-                        use = 'required'
-                    />
+                <xs:attribute
+                    type = 'Url-Type'
+                    name = 'type'
+                    use = 'required'
+                />
 
-                    <xs:attribute
-                        type = 'Url-Branch'
-                        name = 'branch'
-                        use = 'optional'
-                    />
+                <xs:attribute
+                    type = 'Url-Branch'
+                    name = 'branch'
+                    use = 'optional'
+                />
 
-                </xs:extension>
-            </xs:simpleContent>
-        </xs:complexType>
+            </xs:extension>
+        </xs:simpleContent>
 
-    </xs:element>
+    </xs:complexType>
 
 </xs:schema>

@@ -13,7 +13,10 @@
 
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 
-    <xs:element name = 'version' >
+    <xs:simpleType
+        final = '#all'
+        name = 'Package-Version'
+    >
 
         <xs:annotation>
             <xs:documentation>
@@ -48,10 +51,8 @@
 
         <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 
-        <xs:simpleType>
-            <xs:union memberTypes = 'Version-Semantic-Full Version-Calender' />
-        </xs:simpleType>
+        <xs:union memberTypes = 'Version-Semantic-Full Version-Calender' />
 
-    </xs:element>
+    </xs:simpleType>
 
 </xs:schema>

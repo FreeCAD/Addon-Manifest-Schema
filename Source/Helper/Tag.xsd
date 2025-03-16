@@ -9,7 +9,6 @@
 >
 
     <xs:simpleType
-        final = '#all'
         name = 'Tag'
     >
         <xs:union>

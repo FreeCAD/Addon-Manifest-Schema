@@ -12,9 +12,9 @@
 
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 
-    <xs:element
-        type = 'Tag'
-        name = 'tag'
+    <xs:complexType
+        final = '#all'
+        name = 'Package-Tag'
     >
 
         <xs:annotation>
@@ -50,6 +50,12 @@
             </xs:documentation>
         </xs:annotation>
 
-    </xs:element>
+        <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+        <xs:simpleContent>
+            <xs:extension base = 'Tag' />
+        </xs:simpleContent>
+
+    </xs:complexType>
 
 </xs:schema>

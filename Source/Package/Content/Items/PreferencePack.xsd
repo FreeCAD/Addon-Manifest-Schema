@@ -52,7 +52,11 @@
                 <xs:choice maxOccurs = 'unbounded' >
 
                     <xs:element ref = 'subdirectory' />
-                    <xs:element ref = 'name' />
+                    
+                    <xs:element
+                        type = 'Package-Name' 
+                        name = 'name' 
+                    />
 
                     <xs:element
                         maxOccurs = 'unbounded'
