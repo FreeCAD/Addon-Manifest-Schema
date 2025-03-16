@@ -8,7 +8,6 @@
     xmlns:xs = 'http://www.w3.org/2001/XMLSchema'
 >
 
-    <xs:include schemaLocation = '../Helper/Version/Manifest.xsd' />
     <xs:include schemaLocation = './FreeCAD-Minimum.xsd' />
     <xs:include schemaLocation = './FreeCAD-Maximum.xsd' />
     <xs:include schemaLocation = './Python-Minimum.xsd' />
@@ -22,6 +21,7 @@
     <xs:include schemaLocation = './Url/mod.xsd' />
     <xs:include schemaLocation = './Depend.xsd' />
     <xs:include schemaLocation = './Author.xsd' />
+    <xs:include schemaLocation = './Format.xsd' />
     <xs:include schemaLocation = './Icon.xsd' />
     <xs:include schemaLocation = './Name.xsd' />
     <xs:include schemaLocation = './Date.xsd' />
@@ -190,7 +190,7 @@
             <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 
             <xs:attribute
-                type = 'Version-Manifest'
+                type = 'Package-Format'
                 name = 'format'
                 use = 'required'
             />
