@@ -3,9 +3,9 @@
     encoding = 'UTF-8'
 ?>
 
-<xs:schema 
+<xs:schema
     elementFormDefault = 'qualified'
-    xmlns:xs = 'http://www.w3.org/2001/XMLSchema' 
+    xmlns:xs = 'http://www.w3.org/2001/XMLSchema'
 >
 
     <xs:include schemaLocation = '../SubDirectory.xsd' />
@@ -26,7 +26,7 @@
 
                     <h3>
 
-                        <a href = 'https://wiki.freecad.org/Package_Metadata#.3Cclassname.3E' >
+                        <a href = 'https://wiki.freecad.org/Package_Metadata#.3Ccontent.3E' >
                             🛈 ⁣
                         </a>
 
@@ -49,13 +49,13 @@
             <xs:sequence>
                 <xs:choice maxOccurs = 'unbounded' >
 
-                    <xs:element 
+                    <xs:element
                         maxOccurs = '1'
                         minOccurs = '0'
                         type = 'Item-Subdirectory'
-                        name = 'subdirectory' 
+                        name = 'subdirectory'
                     />
-                    
+
                     <xs:element
                         maxOccurs = 'unbounded'
                         minOccurs = '0'
