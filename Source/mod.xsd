@@ -13,7 +13,7 @@
     xmlns = 'HTTPS://Addons.FreeCAD.Org/Manifest'
 
     xml:lang = 'EN'
-    version = '1.3'
+    version = '1.4'
 >
     <xs:include schemaLocation = './Package/mod.xsd' />
 </xs:schema>

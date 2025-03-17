@@ -101,7 +101,7 @@ reference this schema in your addon manifest:
 ### 📖 Examples
 
 | File | Contents |
-|:-----|:--------|
+|:-----|:--------| 
 | [`Everything.xml`] | Manifest with all available elements & attributes.
 
 <br/>
