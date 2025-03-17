@@ -11,6 +11,7 @@
     <xs:include schemaLocation = './PreferencePack.xsd' />
     <xs:include schemaLocation = './Workbench.xsd' />
     <xs:include schemaLocation = './Macro.xsd' />
+    <xs:include schemaLocation = './Other.xsd' />
 
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 

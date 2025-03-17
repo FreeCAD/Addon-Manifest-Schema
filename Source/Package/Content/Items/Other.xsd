@@ -1,0 +1,48 @@
+<?xml
+    version = '1.0'
+    encoding = 'UTF-8'
+?>
+
+<xs:schema
+    elementFormDefault = 'qualified'
+    xmlns:xs = 'http://www.w3.org/2001/XMLSchema'
+>
+
+    <xs:include schemaLocation = './mod.xsd' />
+
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+    <xs:element
+        substitutionGroup = 'Content-Item'
+        nillable = 'true'
+        final = '#all'
+        name = 'other'
+    >
+
+        <xs:annotation>
+            <xs:documentation>
+
+                <![CDATA[
+
+                    <h3>
+
+                        <a href = 'https://wiki.freecad.org/Package_Metadata#.3Ccontent.3E' >
+                            🛈 ⁣
+                        </a>
+
+                        Other
+
+                    </h3>
+
+                    <hr>
+
+                    <p> Declares the addon as something that isn't one of the other content items. </p>
+
+                ]]>
+
+            </xs:documentation>
+        </xs:annotation>
+
+    </xs:element>
+
+</xs:schema>
