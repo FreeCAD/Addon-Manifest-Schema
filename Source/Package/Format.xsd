@@ -3,14 +3,14 @@
     encoding = 'UTF-8'
 ?>
 
-<xs:schema 
+<xs:schema
     elementFormDefault = 'qualified'
-    xmlns:xs = 'http://www.w3.org/2001/XMLSchema' 
+    xmlns:xs = 'http://www.w3.org/2001/XMLSchema'
 >
 
-    <xs:simpleType 
+    <xs:simpleType
         final = '#all'
-        name = 'Package-Format' 
+        name = 'Package-Format'
     >
 
         <xs:annotation>
@@ -40,7 +40,7 @@
         <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 
         <xs:restriction base = 'xs:integer'>
-            <xs:enumeration value = '1' />
+            <xs:enumeration value = '2' />
         </xs:restriction>
 
     </xs:simpleType>
