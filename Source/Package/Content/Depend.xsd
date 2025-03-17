@@ -8,9 +8,13 @@
     xmlns:xs = 'http://www.w3.org/2001/XMLSchema'
 >
 
-    <xs:simpleType
+    <xs:include schemaLocation = '../../Helper/Dependency/Item.xsd' />
+
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+    <xs:complexType
         final = '#all'
-        name = 'Package-Format'
+        name = 'Item-Depend'
     >
 
         <xs:annotation>
@@ -20,17 +24,17 @@
 
                     <h3>
 
-                        <a href = 'https://wiki.freecad.org/Package_Metadata#Attributes' >
+                        <a href = 'https://wiki.freecad.org/Package_Metadata#.3Cdepend.3E' >
                             🛈 ⁣
                         </a>
 
-                        Format
+                        Depend
 
                     </h3>
 
                     <hr>
 
-                    <p> Version of the format used in this manifest. </p>
+                    <p> Declares a dependency on a community addon. </p>
 
                 ]]>
 
@@ -39,10 +43,10 @@
 
         <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 
-        <xs:restriction base = 'xs:integer'>
-            <xs:enumeration value = '2' />
-        </xs:restriction>
+        <xs:complexContent>
+            <xs:extension base = 'Item-Dependency' />
+        </xs:complexContent>
 
-    </xs:simpleType>
+    </xs:complexType>
 
 </xs:schema>

@@ -8,9 +8,15 @@
     xmlns:xs = 'http://www.w3.org/2001/XMLSchema'
 >
 
-    <xs:simpleType
+    <xs:include schemaLocation = './mod.xsd' />
+
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+    <xs:element
+        substitutionGroup = 'Content-Item'
+        nillable = 'true'
         final = '#all'
-        name = 'Package-Format'
+        name = 'other'
     >
 
         <xs:annotation>
@@ -20,29 +26,23 @@
 
                     <h3>
 
-                        <a href = 'https://wiki.freecad.org/Package_Metadata#Attributes' >
+                        <a href = 'https://wiki.freecad.org/Package_Metadata#.3Ccontent.3E' >
                             🛈 ⁣
                         </a>
 
-                        Format
+                        Other
 
                     </h3>
 
                     <hr>
 
-                    <p> Version of the format used in this manifest. </p>
+                    <p> Declares the addon as something that isn't one of the other content items. </p>
 
                 ]]>
 
             </xs:documentation>
         </xs:annotation>
 
-        <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-
-        <xs:restriction base = 'xs:integer'>
-            <xs:enumeration value = '2' />
-        </xs:restriction>
-
-    </xs:simpleType>
+    </xs:element>
 
 </xs:schema>

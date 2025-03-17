@@ -1,0 +1,33 @@
+<?xml
+    version = '1.0'
+    encoding = 'UTF-8'
+?>
+
+<xs:schema
+    elementFormDefault = 'qualified'
+    xmlns:xs = 'http://www.w3.org/2001/XMLSchema'
+>
+
+    <xs:include schemaLocation = './Name/mod.xsd' />
+    <xs:include schemaLocation = './Optional.xsd' />
+    <xs:include schemaLocation = './Type.xsd' />
+
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+    <xs:complexType name = 'Item-Dependency' >
+        <xs:simpleContent>
+
+            <xs:extension base = 'Item-Dependency-Name' >
+
+                <xs:attribute
+                    type = 'Item-Dependency-Type'
+                    name = 'type'
+                    use = 'required'
+                />
+
+            </xs:extension>
+
+        </xs:simpleContent>
+    </xs:complexType>
+
+</xs:schema>

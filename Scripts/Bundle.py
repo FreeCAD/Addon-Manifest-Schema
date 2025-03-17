@@ -14,7 +14,7 @@ Output_Path = join(Project_Path,'.build','Schema.xsd')
 Source_Path = join(Project_Path,'Source')
 Input_Path = join(Source_Path,'mod.xsd')
 
-Max_Depth = 7
+Max_Depth = 10
 
 
 files = set()

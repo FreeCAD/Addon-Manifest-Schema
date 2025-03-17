@@ -3,14 +3,16 @@
     encoding = 'UTF-8'
 ?>
 
-<xs:schema 
+<xs:schema
     elementFormDefault = 'qualified'
-    xmlns:xs = 'http://www.w3.org/2001/XMLSchema' 
+    xmlns:xs = 'http://www.w3.org/2001/XMLSchema'
 >
 
     <xs:include schemaLocation = './PreferencePack.xsd' />
     <xs:include schemaLocation = './Workbench.xsd' />
+    <xs:include schemaLocation = './Bundle.xsd' />
     <xs:include schemaLocation = './Macro.xsd' />
+    <xs:include schemaLocation = './Other.xsd' />
 
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 
