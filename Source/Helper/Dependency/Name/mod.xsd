@@ -3,9 +3,9 @@
     encoding = 'UTF-8'
 ?>
 
-<xs:schema 
+<xs:schema
     elementFormDefault = 'qualified'
-    xmlns:xs = 'http://www.w3.org/2001/XMLSchema' 
+    xmlns:xs = 'http://www.w3.org/2001/XMLSchema'
 >
 
     <xs:include schemaLocation = './Internal/mod.xsd' />
@@ -38,4 +38,26 @@
         </xs:union>
 
     </xs:simpleType>
+
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+    <xs:simpleType name = 'Item-Dependency-Name' >
+        <xs:union>
+
+            <!-- Community Addon -->
+
+            <xs:simpleType>
+                <xs:restriction base = 'Addon-Name' />
+            </xs:simpleType>
+
+            <!-- Internal Mod -->
+
+            <xs:simpleType>
+                <xs:restriction base = 'Internal-Name' />
+            </xs:simpleType>
+
+        </xs:union>
+
+    </xs:simpleType>
+
 </xs:schema>

@@ -1,0 +1,52 @@
+<?xml
+    version = '1.0'
+    encoding = 'UTF-8'
+?>
+
+<xs:schema
+    elementFormDefault = 'qualified'
+    xmlns:xs = 'http://www.w3.org/2001/XMLSchema'
+>
+
+    <xs:include schemaLocation = '../../Helper/Dependency/Item.xsd' />
+
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+    <xs:complexType
+        final = '#all'
+        name = 'Item-Depend'
+    >
+
+        <xs:annotation>
+            <xs:documentation>
+
+                <![CDATA[
+
+                    <h3>
+
+                        <a href = 'https://wiki.freecad.org/Package_Metadata#.3Cdepend.3E' >
+                            🛈 ⁣
+                        </a>
+
+                        Depend
+
+                    </h3>
+
+                    <hr>
+
+                    <p> Declares a dependency on a community addon. </p>
+
+                ]]>
+
+            </xs:documentation>
+        </xs:annotation>
+
+        <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+        <xs:complexContent>
+            <xs:extension base = 'Item-Dependency' />
+        </xs:complexContent>
+
+    </xs:complexType>
+
+</xs:schema>

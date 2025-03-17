@@ -1,0 +1,65 @@
+<?xml
+    version = '1.0'
+    encoding = 'UTF-8'
+?>
+
+<xs:schema
+    elementFormDefault = 'qualified'
+    xmlns:xs = 'http://www.w3.org/2001/XMLSchema'
+>
+
+    <xs:include schemaLocation = '../Depend.xsd' />
+    <xs:include schemaLocation = './mod.xsd' />
+
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+    <xs:element
+        substitutionGroup = 'Content-Item'
+        final = '#all'
+        name = 'bundle'
+    >
+
+        <xs:annotation>
+            <xs:documentation>
+
+                <![CDATA[
+
+                    <h3>
+
+                        <a href = 'https://wiki.freecad.org/Package_Metadata#.3Ccontent.3E' >
+                            🛈 ⁣
+                        </a>
+
+                        Bundle
+
+                    </h3>
+
+                    <hr>
+
+                    <p> Wraps multiple community addons. </p>
+
+                ]]>
+
+            </xs:documentation>
+        </xs:annotation>
+
+        <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+        <xs:complexType>
+            <xs:sequence>
+                <xs:choice maxOccurs = 'unbounded' >
+
+                    <xs:element
+                        maxOccurs = 'unbounded'
+                        minOccurs = '2'
+                        type = 'Item-Depend'
+                        name = 'depend'
+                    />
+
+                </xs:choice>
+            </xs:sequence>
+        </xs:complexType>
+
+    </xs:element>
+
+</xs:schema>
