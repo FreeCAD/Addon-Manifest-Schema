@@ -8,8 +8,7 @@
     xmlns:xs = 'http://www.w3.org/2001/XMLSchema'
 >
 
-    <xs:include schemaLocation = '../SubDirectory.xsd' />
-    <xs:include schemaLocation = '../File.xsd' />
+    <xs:include schemaLocation = '../Preference/Name.xsd' />
     <xs:include schemaLocation = './mod.xsd' />
 
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
@@ -48,23 +47,14 @@
 
         <xs:complexType>
             <xs:sequence>
-                <xs:choice maxOccurs = 'unbounded' >
 
-                    <xs:element
-                        maxOccurs = '1'
-                        minOccurs = '0'
-                        type = 'Item-Subdirectory'
-                        name = 'subdirectory'
-                    />
+                <xs:element
+                    maxOccurs = '1'
+                    minOccurs = '1'
+                    type = 'Preference-Name'
+                    name = 'name'
+                />
 
-                    <xs:element
-                        maxOccurs = 'unbounded'
-                        minOccurs = '0'
-                        type = 'Item-File'
-                        name = 'file'
-                    />
-
-                </xs:choice>
             </xs:sequence>
         </xs:complexType>
 
