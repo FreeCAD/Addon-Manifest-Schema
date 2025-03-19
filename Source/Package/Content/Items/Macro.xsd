@@ -9,7 +9,6 @@
 >
 
     <xs:include schemaLocation = '../SubDirectory.xsd' />
-    <xs:include schemaLocation = '../File.xsd' />
     <xs:include schemaLocation = './mod.xsd' />
 
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
@@ -55,13 +54,6 @@
                         minOccurs = '0'
                         type = 'Item-Subdirectory'
                         name = 'subdirectory'
-                    />
-
-                    <xs:element
-                        maxOccurs = 'unbounded'
-                        minOccurs = '1'
-                        type = 'Item-File'
-                        name = 'file'
                     />
 
                 </xs:choice>
