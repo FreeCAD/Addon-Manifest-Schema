@@ -1,0 +1,52 @@
+<?xml
+    version = '1.0'
+    encoding = 'UTF-8'
+?>
+
+<xs:schema 
+    elementFormDefault = 'qualified'
+    xmlns:xs = 'http://www.w3.org/2001/XMLSchema' 
+>
+
+    <xs:simpleType 
+        final = '#all'
+        name = 'Preference-Name' 
+    >
+
+        <xs:annotation>
+            <xs:documentation>
+
+                <![CDATA[
+
+                    <h3>
+
+                        <a href = 'https://wiki.freecad.org/Package_Metadata#.3Cname.3E' >
+                            🛈 ⁣
+                        </a>
+
+                        Name
+
+                    </h3>
+
+                    <hr>
+
+                    <p> Name displayed in UI & name of the source folder. </p>
+
+                    <p> Should be a simple, unique & descriptive name. </p>
+
+                    <p> Examples : `Moonlight` , `Waterworld` , `Dawn & Night` </p>
+
+                ]]>
+
+            </xs:documentation>
+        </xs:annotation>
+
+        <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+        <xs:restriction base = 'xs:string' >
+            <xs:pattern value = '[^\\/\\\\?\\%\\*\\:\\|\\"&lt;&gt;]+' />
+        </xs:restriction>
+
+    </xs:simpleType>
+    
+</xs:schema>
