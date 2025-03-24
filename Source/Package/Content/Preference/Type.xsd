@@ -1,0 +1,50 @@
+<?xml
+    version = '1.0'
+    encoding = 'UTF-8'
+?>
+
+<xs:schema
+    elementFormDefault = 'qualified'
+    xmlns:xs = 'http://www.w3.org/2001/XMLSchema'
+>
+
+    <xs:simpleType
+        final = '#all'
+        name = 'Preference-Type'
+    >
+
+        <xs:annotation>
+            <xs:documentation>
+
+                <![CDATA[
+
+                    <h3>
+
+                        <a href = 'https://wiki.freecad.org/Package_Metadata#.3Ccontent.3E' >
+                            🛈 ⁣
+                        </a>
+
+                        Type
+
+                    </h3>
+
+                    <hr>
+
+                    <p> Indicates the type of preference pack. </p>
+
+                    <p> Can only be set to `theme` if present. </p>
+
+                ]]>
+
+            </xs:documentation>
+        </xs:annotation>
+
+        <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+        <xs:restriction base = 'xs:string' >
+            <xs:enumeration value = 'Theme' />
+        </xs:restriction>
+
+    </xs:simpleType>
+
+</xs:schema>

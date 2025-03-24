@@ -9,6 +9,7 @@
 >
 
     <xs:include schemaLocation = '../Preference/Name.xsd' />
+    <xs:include schemaLocation = '../Preference/Type.xsd' />
     <xs:include schemaLocation = './mod.xsd' />
 
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
@@ -53,6 +54,13 @@
                     minOccurs = '1'
                     type = 'Preference-Name'
                     name = 'name'
+                />
+
+                <xs:element
+                    maxOccurs = '1'
+                    minOccurs = '0'
+                    type = 'Preference-Type'
+                    name = 'type'
                 />
 
             </xs:sequence>
