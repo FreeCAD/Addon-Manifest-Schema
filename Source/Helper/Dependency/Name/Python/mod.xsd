@@ -60,6 +60,7 @@
     <xs:include schemaLocation = './PyDocX.xsd' />
     <xs:include schemaLocation = './PyGit2.xsd' />
     <xs:include schemaLocation = './PyYAML.xsd' />
+    <xs:include schemaLocation = './XGBXML.xsd' />
     <xs:include schemaLocation = './Numpy.xsd' />
     <xs:include schemaLocation = './Numba.xsd' />
     <xs:include schemaLocation = './EzDXF.xsd' />
@@ -132,6 +133,7 @@
             <xs:simpleType> <xs:restriction base = 'Python-PyDocX' /> </xs:simpleType>
             <xs:simpleType> <xs:restriction base = 'Python-PyGit2' /> </xs:simpleType>
             <xs:simpleType> <xs:restriction base = 'Python-PyYAML' /> </xs:simpleType>
+            <xs:simpleType> <xs:restriction base = 'Python-XGBXML' /> </xs:simpleType>
             <xs:simpleType> <xs:restriction base = 'Python-Numba' /> </xs:simpleType>
             <xs:simpleType> <xs:restriction base = 'Python-EzDXF' /> </xs:simpleType>
             <xs:simpleType> <xs:restriction base = 'Python-Numpy' /> </xs:simpleType>
