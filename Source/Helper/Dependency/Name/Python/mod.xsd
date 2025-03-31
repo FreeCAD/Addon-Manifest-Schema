@@ -39,6 +39,7 @@
     <xs:include schemaLocation = './PyOpenXR.xsd' />
     <xs:include schemaLocation = './Requests.xsd' />
     <xs:include schemaLocation = './Rhino3DM.xsd' />
+    <xs:include schemaLocation = './Triangle.xsd' />
     <xs:include schemaLocation = './AsyncUA.xsd' />
     <xs:include schemaLocation = './Awkward.xsd' />
     <xs:include schemaLocation = './Blinker.xsd' />
@@ -110,6 +111,7 @@
             <xs:simpleType> <xs:restriction base = 'Python-PyOpenXR' /> </xs:simpleType>
             <xs:simpleType> <xs:restriction base = 'Python-Requests' /> </xs:simpleType>
             <xs:simpleType> <xs:restriction base = 'Python-Rhino3DM' /> </xs:simpleType>
+            <xs:simpleType> <xs:restriction base = 'Python-Triangle' /> </xs:simpleType>
             <xs:simpleType> <xs:restriction base = 'Python-AsyncUA' /> </xs:simpleType>
             <xs:simpleType> <xs:restriction base = 'Python-Awkward' /> </xs:simpleType>
             <xs:simpleType> <xs:restriction base = 'Python-Blinker' /> </xs:simpleType>
