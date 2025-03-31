@@ -55,8 +55,8 @@ end_of_line = lf
 indent_size = 4
 charset = utf-8
 
-[*.{json,xml,xsd,yml,py}]
+[*.{json,xml,xsd,py}]
 trim_trailing_whitespace = true
 
-[*.{md}]
+[*.{yml,md}]
 trim_trailing_whitespace = false
